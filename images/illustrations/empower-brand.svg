@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- badge circle -->
+  <circle cx="60" cy="46" r="28" fill="#faf8f7" stroke="#050505" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="60" cy="46" r="20" fill="#c92818" stroke="#050505" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- star/check in badge -->
+  <path d="M60 36 L63 43 L70 43 L64 48 L66 55 L60 51 L54 55 L56 48 L50 43 L57 43 Z" fill="#fff" stroke="#050505" stroke-width="1.8" stroke-linejoin="round"/>
+  <!-- claw/hand from bottom -->
+  <path d="M30 95 C30 75 40 65 50 72 C54 75 56 82 60 82 C64 82 66 75 70 72 C80 65 90 75 90 95" fill="#c92818" stroke="#050505" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M44 78 C42 72 44 66 48 64" fill="none" stroke="#050505" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M76 78 C78 72 76 66 72 64" fill="none" stroke="#050505" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- shine marks -->
+  <line x1="92" y1="28" x2="98" y2="22" stroke="#050505" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="28" y1="28" x2="22" y2="22" stroke="#050505" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <!-- megaphone -->
+  <path d="M60 140 L110 110 L110 170 Z" fill="#c92818" stroke="#050505" stroke-width="3" stroke-linejoin="round"/>
+  <rect x="100" y="125" width="40" height="30" rx="6" fill="#faf8f7" stroke="#050505" stroke-width="3"/>
+  <path d="M150 140 L220 140" fill="none" stroke="#050505" stroke-width="3" stroke-dasharray="8 6"/>
+  <!-- funnel -->
+  <path d="M220 110 L280 110 L260 170 L240 170 Z" fill="#fff7ed" stroke="#050505" stroke-width="3" stroke-linejoin="round"/>
+  <!-- coins -->
+  <ellipse cx="300" cy="200" rx="28" ry="12" fill="#c92818" stroke="#050505" stroke-width="2.5"/>
+  <ellipse cx="300" cy="190" rx="28" ry="12" fill="#f23709" stroke="#050505" stroke-width="2.5"/>
+  <ellipse cx="300" cy="180" rx="28" ry="12" fill="#fb7185" stroke="#050505" stroke-width="2.5"/>
+  <text x="300" y="192" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">¥</text>
+  <!-- sound waves -->
+  <path d="M115 90 C140 70 170 70 190 90" fill="none" stroke="#050505" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M125 70 C160 45 200 45 225 70" fill="none" stroke="#050505" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- spark -->
+  <circle cx="340" cy="130" r="6" fill="#c92818" stroke="#050505" stroke-width="2"/>
+</svg>

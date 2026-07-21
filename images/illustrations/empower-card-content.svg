@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <!-- stage backdrop -->
+  <rect x="60" y="60" width="280" height="160" rx="12" fill="#fff7ed" stroke="#050505" stroke-width="3"/>
+  <!-- books -->
+  <rect x="90" y="150" width="50" height="60" rx="4" fill="#c92818" stroke="#050505" stroke-width="2.5"/>
+  <rect x="100" y="140" width="50" height="60" rx="4" fill="#fff" stroke="#050505" stroke-width="2.5"/>
+  <line x1="125" y1="150" x2="125" y2="190" stroke="#050505" stroke-width="2"/>
+  <!-- mic stand -->
+  <line x1="240" y1="210" x2="240" y2="130" stroke="#050505" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="240" cy="120" r="16" fill="#faf8f7" stroke="#050505" stroke-width="3"/>
+  <line x1="232" y1="112" x2="248" y2="128" stroke="#050505" stroke-width="2"/>
+  <line x1="248" y1="112" x2="232" y2="128" stroke="#050505" stroke-width="2"/>
+  <!-- stage floor -->
+  <path d="M50 220 L350 220 L330 250 L70 250 Z" fill="#c92818" stroke="#050505" stroke-width="3" stroke-linejoin="round"/>
+  <!-- spotlight -->
+  <path d="M160 60 L130 120 L190 120 Z" fill="rgba(255,255,255,0.5)" stroke="none"/>
+</svg>

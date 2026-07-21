@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <!-- big gear -->
+  <circle cx="140" cy="150" r="55" fill="#fff7ed" stroke="#050505" stroke-width="3"/>
+  <circle cx="140" cy="150" r="24" fill="#faf8f7" stroke="#050505" stroke-width="3"/>
+  <path d="M140 85 L140 95 M140 205 L140 215 M75 150 L85 150 M195 150 L205 150 M94 104 L101 111 M179 189 L186 196 M186 104 L179 111 M101 189 L94 196" stroke="#050505" stroke-width="5" stroke-linecap="round"/>
+  <!-- small gear -->
+  <circle cx="240" cy="100" r="32" fill="#faf8f7" stroke="#050505" stroke-width="3"/>
+  <circle cx="240" cy="100" r="14" fill="#fff7ed" stroke="#050505" stroke-width="2.5"/>
+  <path d="M240 60 L240 68 M240 132 L240 140 M208 100 L216 100 M264 100 L272 100" stroke="#050505" stroke-width="4" stroke-linecap="round"/>
+  <!-- people silhouettes -->
+  <circle cx="290" cy="190" r="18" fill="#c92818" stroke="#050505" stroke-width="2.5"/>
+  <path d="M260 240 C260 215 275 210 290 210 C305 210 320 215 320 240" fill="#c92818" stroke="#050505" stroke-width="2.5"/>
+  <circle cx="330" cy="180" r="14" fill="#fb7185" stroke="#050505" stroke-width="2.5"/>
+  <path d="M310 220 C310 200 320 196 330 196 C340 196 350 200 350 220" fill="#fb7185" stroke="#050505" stroke-width="2.5"/>
+  <!-- robot hand -->
+  <path d="M220 220 L250 220 L255 205 L265 205 L268 220" fill="#faf8f7" stroke="#050505" stroke-width="2.5" stroke-linejoin="round"/>
+</svg>

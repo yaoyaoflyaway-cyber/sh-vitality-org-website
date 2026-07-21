@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- robot arm from right -->
+  <path d="M115 70 L90 70 L85 55 L75 55 L72 68" fill="#faf8f7" stroke="#050505" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="80" y="48" width="22" height="16" rx="4" fill="#c92818" stroke="#050505" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="86" cy="56" r="2.5" fill="#fff"/>
+  <circle cx="96" cy="56" r="2.5" fill="#fff"/>
+  <line x1="104" y1="62" x2="114" y2="62" stroke="#050505" stroke-width="3" stroke-linecap="round"/>
+  <!-- human arm from left -->
+  <path d="M5 70 L30 70 L35 55 L45 55 L48 68" fill="#c92818" stroke="#050505" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- high-five burst -->
+  <line x1="60" y1="42" x2="60" y2="30" stroke="#050505" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="48" y1="48" x2="40" y2="40" stroke="#050505" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="72" y1="48" x2="80" y2="40" stroke="#050505" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="60" cy="56" r="7" fill="#c92818" stroke="#050505" stroke-width="2"/>
+</svg>

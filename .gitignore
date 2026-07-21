@@ -1,0 +1,16 @@
+# 设计稿/截图/参考图（非线上资源）
+v4-*.png
+v4-*.png
+screenshot*.png
+ref-nodesk*.png
+live-preview*.png
+ic-phones*.png
+ic-phones-*.png
+empower-*.png
+full-page-check.png
+*.png.bak
+
+# 系统/编辑缓存
+.DS_Store
+Thumbs.db
+*~
