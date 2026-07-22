@@ -322,18 +322,14 @@ mark { background: transparent; color: var(--red); font-weight: 900; }
 .influence .en-label { color: var(--red-bright); }
 .influence .big-head { color: var(--paper); }
 .influence .section-sub { color: #b8b8b8; }
-.influence-layout {
-  display: grid;
-  grid-template-columns: 1.3fr 0.7fr;
-  gap: 60px;
-  align-items: center;
-}
-.influence-img {
+.influence-system { margin: 60px 0 52px; }
+.system-essence-img {
   width: 100%;
   border-radius: 4px;
   border: 1px solid rgba(255,255,255,0.1);
+  background: #f4f4f0;
 }
-.influence-claims { display: flex; flex-direction: column; gap: 28px; }
+.influence-claims { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
 .influence-claim {
   font-size: clamp(20px, 2.4vw, 30px);
   font-weight: 700;
@@ -465,7 +461,9 @@ mark { background: transparent; color: var(--red); font-weight: 900; }
 }
 
 /* InfluenceClaw */
-.claw-layout { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 56px; align-items: center; }
+.claw-layout { display: block; }
+.claw-phones { margin-top: 56px; }
+.claw-phones-head { font-size: 13px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--red); margin-bottom: 28px; }
 .claw-img-box {
   border: 1px solid var(--line); border-radius: 4px; overflow: hidden; background: var(--paper-warm);
 }
@@ -608,63 +606,29 @@ mark { background: transparent; color: var(--red); font-weight: 900; }
 .business-img-box img { width: 100%; }
 
 /* 八大赋能 */
-.empower-hero {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.empower-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.empower-card {
   border: 1px solid var(--line);
   border-radius: 4px;
   overflow: hidden;
-  margin-bottom: 48px;
   background: #fff;
-}
-.eh-text {
-  padding: 56px 52px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-}
-.eh-text .en-label { margin-bottom: 14px; }
-.eh-text h3 { font-size: 36px; font-weight: 900; line-height: 1.15; margin-bottom: 18px; letter-spacing: -0.02em; }
-.eh-text p { font-size: 16px; color: var(--ink-soft); line-height: 1.7; }
-.eh-art {
-  background: var(--red-soft);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 40px;
-  border-left: 1px solid var(--line);
-}
-.eh-art img { width: 100%; max-width: 460px; height: auto; }
-
-.empower-cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
-.empower-big-card {
-  border: 1px solid var(--line);
-  border-radius: 4px;
-  overflow: hidden;
-  background: #fff;
   transition: transform .35s, border-color .35s, box-shadow .35s;
 }
-.empower-big-card:hover { transform: translateY(-6px); border-color: var(--red); box-shadow: var(--shadow-red); }
-.ebc-art {
-  height: 240px;
-  background: var(--paper-warm);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-bottom: 1px solid var(--line);
-  overflow: hidden;
-}
-.ebc-art img { height: 88%; width: auto; max-width: 92%; object-fit: contain; }
-.ebc-text { padding: 30px 32px; }
-.ebc-text h4 { font-size: 22px; font-weight: 900; margin-bottom: 16px; letter-spacing: -0.01em; }
-.ebc-text p { font-size: 14px; color: var(--ink-soft); line-height: 1.65; margin-bottom: 8px; }
-.ebc-text p:last-child { margin-bottom: 0; }
-.ebc-text strong { color: var(--ink); font-weight: 800; }
+.empower-card:hover { transform: translateY(-6px); border-color: var(--red); box-shadow: var(--shadow-red); }
+.ec-art { line-height: 0; background: #faf8f7; }
+.ec-art img { width: 100%; height: auto; display: block; }
+.ec-body { padding: 22px 22px 26px; display: flex; flex-direction: column; }
+.ec-num { font-size: 12px; font-weight: 800; letter-spacing: .12em; color: var(--red); margin-bottom: 8px; }
+.ec-title { font-size: 21px; font-weight: 900; margin-bottom: 10px; letter-spacing: -0.01em; }
+.ec-desc { font-size: 13px; color: var(--ink-soft); line-height: 1.65; }
 
 @media (max-width: 1024px) {
-  .empower-hero { grid-template-columns: 1fr; }
-  .eh-art { border-left: none; border-top: 1px solid var(--line); }
-  .empower-cards { grid-template-columns: 1fr; }
+  .empower-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 560px) {
+  .empower-grid { grid-template-columns: 1fr; }
 }
 
 /* ===== 联系我们 ===== */
@@ -844,7 +808,7 @@ mark { background: transparent; color: var(--red); font-weight: 900; }
 /* ===== InfluenceClaw 手机屏幕（提取自产品演示源码，转为无依赖样式） ===== */
 .ic-showcase { margin-top: 72px; }
 .ic-showcase-head { font-size: 13px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--red); margin-bottom: 28px; }
-.ic-phones-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.claw-phones-row { display: grid; grid-template-columns: repeat(5, 1fr); gap: 18px; align-items: start; }
 .ic-phone { position: relative; background: #fff; border: 11px solid #1e293b; border-radius: 46px; overflow: hidden; box-shadow: 0 30px 60px -18px rgba(15,23,42,.45); display: flex; flex-direction: column; }
 .ic-phone--de { width: 100%; max-width: 360px; height: 660px; margin: 0 auto; }
 .ic-phone--chat { width: 100%; border-width: 9px; border-radius: 34px; height: 540px; }
@@ -962,8 +926,9 @@ mark { background: transparent; color: var(--red); font-weight: 900; }
 .ic-tool-icons .tg { cursor: pointer; }
 .ic-input { width: 100%; background: #f1f5f9; border: none; border-radius: 999px; padding: 8px 12px; font-size: 11px; outline: none; }
 
-@media (max-width: 1024px) { .ic-phones-row { grid-template-columns: repeat(2,1fr); } }
-@media (max-width: 768px) { .ic-phones-row { grid-template-columns: 1fr; } .ic-phone--chat { height: 500px; } }
+@media (max-width: 1100px) { .claw-phones-row { grid-template-columns: repeat(3,1fr); } }
+@media (max-width: 760px) { .claw-phones-row { grid-template-columns: repeat(2,1fr); } }
+@media (max-width: 480px) { .claw-phones-row { grid-template-columns: 1fr; } .ic-phone--chat { height: 500px; } }
 .ic-input input { width: 100%; background: transparent; border: none; outline: none; font: inherit; color: #334155; padding: 0; margin: 0; }
 .ic-input input::placeholder { color: #94a3b8; }
 .ic-switch { position: relative; display: inline-block; width: 32px; height: 18px; flex: 0 0 auto; }

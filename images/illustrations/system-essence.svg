@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 820" width="1200" height="820">
+  <rect width="1200" height="820" fill="#f4f4f0"/>
+
+  <!-- Title -->
+  <text x="80" y="95" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="56" font-weight="900" fill="#050505" letter-spacing="-0.02em">AI × 互联网 × 生意 × 影响力</text>
+  <text x="80" y="145" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="22" font-weight="500" fill="#555">四种能力同构，才是一套可以持续运行的增长系统。</text>
+
+  <!-- Cards group -->
+  <g transform="translate(80, 210)">
+    <!-- Connecting lines -->
+    <line x1="245" y1="130" x2="275" y2="130" stroke="#050505" stroke-width="4" stroke-linecap="round"/>
+    <line x1="515" y1="130" x2="545" y2="130" stroke="#050505" stroke-width="4" stroke-linecap="round"/>
+    <line x1="785" y1="130" x2="815" y2="130" stroke="#050505" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Card 1: AI -->
+    <rect x="0" y="0" width="245" height="310" rx="6" fill="#facc15" stroke="#050505" stroke-width="3"/>
+    <text x="22" y="42" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="15" font-weight="800" fill="#050505">01 / INTELLIGENCE</text>
+    <text x="22" y="130" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="64" font-weight="900" fill="#050505">AI</text>
+    <text x="22" y="175" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="22" font-weight="800" fill="#050505">能力放大器</text>
+    <text x="22" y="225" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="17" font-weight="500" fill="#050505">沉淀知识</text>
+    <text x="22" y="255" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="17" font-weight="500" fill="#050505">复制判断</text>
+
+    <!-- Card 2: Connection -->
+    <rect x="275" y="0" width="245" height="310" rx="6" fill="#0ea5e9" stroke="#050505" stroke-width="3"/>
+    <text x="297" y="42" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="15" font-weight="800" fill="#050505">02 / CONNECTION</text>
+    <text x="297" y="130" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="52" font-weight="900" fill="#050505">互联网</text>
+    <text x="297" y="175" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="22" font-weight="800" fill="#050505">连接基础设施</text>
+    <text x="297" y="225" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="17" font-weight="500" fill="#050505">连接用户</text>
+    <text x="297" y="255" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="17" font-weight="500" fill="#050505">积累关系</text>
+
+    <!-- Card 3: Business -->
+    <rect x="550" y="0" width="245" height="310" rx="6" fill="#ffffff" stroke="#050505" stroke-width="3"/>
+    <text x="572" y="42" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="15" font-weight="800" fill="#050505">03 / BUSINESS</text>
+    <text x="572" y="130" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="56" font-weight="900" fill="#050505">生意</text>
+    <text x="572" y="175" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="22" font-weight="800" fill="#050505">价值交换系统</text>
+    <text x="572" y="225" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="17" font-weight="500" fill="#050505">解决需求</text>
+    <text x="572" y="255" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="17" font-weight="500" fill="#050505">形成闭环</text>
+
+    <!-- Card 4: Influence -->
+    <rect x="825" y="0" width="245" height="310" rx="6" fill="#fb7185" stroke="#050505" stroke-width="3"/>
+    <text x="847" y="42" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="15" font-weight="800" fill="#050505">04 / INFLUENCE</text>
+    <text x="847" y="130" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="52" font-weight="900" fill="#050505">影响力</text>
+    <text x="847" y="175" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="22" font-weight="800" fill="#050505">信任增长引擎</text>
+    <text x="847" y="225" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="17" font-weight="500" fill="#050505">被看见</text>
+    <text x="847" y="255" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="17" font-weight="500" fill="#050505">被选择</text>
+  </g>
+
+  <!-- Bottom conclusion -->
+  <text x="80" y="640" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="34" font-weight="900" fill="#050505">最终结果：把一个真实的人，放大成一支持续创造价值的队伍。</text>
+</svg>
