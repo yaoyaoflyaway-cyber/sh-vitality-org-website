@@ -140,47 +140,35 @@ ul { list-style: none; }
     radial-gradient(50% 40% at 10% 90%, rgba(201,40,24,0.04), transparent 70%);
   pointer-events: none;
 }
-.hero-inner { max-width: var(--max); margin: 0 auto; width: 100%; position: relative; z-index: 1; display: grid; grid-template-columns: 1.1fr 0.9fr; align-items: center; gap: 40px; }
-.hero-content { position: relative; }
-.hero-visual { position: relative; display: flex; align-items: center; justify-content: center; }
-.hero-visual-ring { position: absolute; width: 92%; aspect-ratio: 1 / 1; max-width: 540px; border-radius: 50%; background: radial-gradient(circle at 50% 45%, rgba(201,40,24,0.06) 0%, rgba(201,40,24,0.03) 40%, transparent 70%); }
-.hero-mascot { width: 100%; max-width: 500px; height: auto; position: relative; z-index: 1; animation: mascotFloat 6s ease-in-out infinite; filter: drop-shadow(0 20px 40px rgba(201,40,24,0.12)); }
-@keyframes mascotFloat { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-14px); } }
-.hero-eyebrow {
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 0.24em;
-  text-transform: uppercase;
-  color: var(--red);
-  margin-bottom: 32px;
+.hero-inner { max-width: var(--max); margin: 0 auto; width: 100%; position: relative; z-index: 1; display: flex; justify-content: center; text-align: center; }
+.hero-content { position: relative; max-width: 980px; }
+.hero-line1 {
+  font-size: clamp(28px, 4vw, 56px);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  margin-bottom: 22px;
 }
-.hero-title {
-  font-size: clamp(48px, 8vw, 104px);
+.hero-line2 {
+  font-size: clamp(16px, 2vw, 22px);
+  color: var(--ink-soft);
+  max-width: 760px;
+  line-height: 1.7;
+  margin: 0 auto 34px;
+}
+.hero-line3 {
+  font-size: clamp(32px, 5.2vw, 72px);
   font-weight: 900;
-  line-height: 1.02;
+  line-height: 1.08;
   letter-spacing: -0.03em;
   color: var(--ink);
-  margin-bottom: 36px;
-}
-.hero-title .red { color: var(--red); }
-.hero-sub {
-  font-size: clamp(16px, 2vw, 20px);
-  color: var(--ink-soft);
-  max-width: 680px;
-  line-height: 1.7;
-  margin-bottom: 28px;
-}
-.hero-manifesto {
-  font-size: clamp(20px, 2.6vw, 30px);
-  font-weight: 800;
-  letter-spacing: -0.01em;
   margin-bottom: 44px;
-  line-height: 1.4;
 }
-.hero-manifesto mark { background: transparent; color: var(--red); }
+.hero-line3 .red { color: var(--red); }
 
 mark { background: transparent; color: var(--red); font-weight: 900; }
-.hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
+.hero-actions { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; }
 .btn {
   display: inline-flex;
   align-items: center;
@@ -555,6 +543,18 @@ mark { background: transparent; color: var(--red); font-weight: 900; }
   background: var(--red-bright);
   margin: 32px 0 0;
 }
+.standard-story {
+  max-width: 900px;
+  margin: 0 auto 56px;
+}
+.standard-story p {
+  font-size: clamp(16px, 2vw, 20px);
+  line-height: 1.85;
+  color: var(--ink-soft);
+  margin-bottom: 22px;
+}
+.standard-story p:last-child { margin-bottom: 0; }
+.standard-story strong { color: var(--ink); font-weight: 700; }
 .ai-elements {
   margin-top: 64px;
   display: grid;
@@ -590,7 +590,8 @@ mark { background: transparent; color: var(--red); font-weight: 900; }
 .solution-pillar .sp-num {
   font-size: 13px; font-weight: 700; color: var(--red); margin-bottom: 20px;
 }
-.solution-pillar h3 { font-size: 30px; font-weight: 800; margin-bottom: 14px; letter-spacing: -0.02em; }
+.solution-pillar h3 { font-size: 30px; font-weight: 800; margin-bottom: 10px; letter-spacing: -0.02em; }
+.solution-pillar .product-slogan { font-size: 18px; font-weight: 700; color: var(--ink); line-height: 1.4; margin-bottom: 14px; }
 .solution-pillar p { font-size: 15px; color: var(--ink-soft); line-height: 1.7; margin-bottom: 20px; }
 .solution-pillar .sp-link {
   font-size: 14px; font-weight: 600; color: var(--red);
@@ -1539,8 +1540,6 @@ mark { background: transparent; color: var(--red); font-weight: 900; }
   .im-line .im-num { font-size: 11px; }
   .im-divider { margin-top: 24px; }
   .is-cards { grid-template-columns: 1fr; }
-  .hero-inner { grid-template-columns: 1fr; gap: 24px; }
-  .hero-mascot { max-width: 320px; }
   .course-intro { margin-bottom: 28px; }
   .course-imgs { grid-template-columns: 1fr; gap: 12px; }
   .is-card { margin-left: 0; margin-top: -1px; min-height: auto; padding: 28px 22px; }
