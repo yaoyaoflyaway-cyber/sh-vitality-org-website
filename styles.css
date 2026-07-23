@@ -508,45 +508,6 @@ mark { background: transparent; color: var(--red); font-weight: 900; }
   border-top: 1px solid rgba(255,255,255,0.12);
 }
 .is-result .red { color: var(--red-bright); }
-.influence-manifesto {
-  margin-top: 64px;
-  border-top: 1px solid rgba(255,255,255,0.12);
-  padding-top: 52px;
-}
-.im-line {
-  display: flex;
-  align-items: baseline;
-  gap: 20px;
-  font-size: clamp(24px, 3.2vw, 40px);
-  font-weight: 700;
-  line-height: 1.45;
-  letter-spacing: -0.01em;
-  color: var(--paper);
-  margin: 0 0 18px;
-}
-.im-line:last-child { margin-bottom: 0; }
-.im-line .im-num {
-  flex: 0 0 auto;
-  width: 28px;
-  font-size: 13px;
-  font-weight: 800;
-  letter-spacing: 0.06em;
-  color: var(--red-bright);
-  transform: translateY(-2px);
-}
-.im-line .im-text { flex: 1; }
-.im-line .red { color: var(--red-bright); }
-.im-line--lead {
-  font-size: clamp(28px, 4vw, 48px);
-  font-weight: 900;
-  margin-top: 36px;
-}
-.im-divider {
-  width: 64px;
-  height: 3px;
-  background: var(--red-bright);
-  margin: 32px 0 0;
-}
 .standard-story {
   max-width: 900px;
   margin: 0 auto 56px;
@@ -559,22 +520,6 @@ mark { background: transparent; color: var(--red); font-weight: 900; }
 }
 .standard-story p:last-child { margin-bottom: 0; }
 .standard-story strong { color: var(--ink); font-weight: 700; }
-.ai-elements {
-  margin-top: 64px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
-  border-top: 1px solid rgba(255,255,255,0.12);
-  padding-top: 40px;
-}
-.ai-element {
-  text-align: center;
-  padding: 24px 12px;
-}
-.ai-element .ae-num { font-size: 13px; color: var(--red-bright); font-weight: 700; margin-bottom: 12px; }
-.ai-element .ae-name { font-size: 18px; font-weight: 700; margin-bottom: 6px; }
-.ai-element .ae-desc { font-size: 12px; color: #9a9a9a; line-height: 1.5; }
-
 /* ===== 解决方案总览 ===== */
 .solution-pillars {
   display: grid;
@@ -1477,7 +1422,6 @@ mark { background: transparent; color: var(--red); font-weight: 900; }
   .influence-layout, .claw-layout, .course-top, .contact-layout { grid-template-columns: 1fr; gap: 40px; }
   .solution-pillars { grid-template-columns: 1fr; }
   .scene-grid, .value-trio, .module-trio, .kids-grid, .empower-grid { grid-template-columns: repeat(2, 1fr); }
-  .ai-elements { grid-template-columns: repeat(2, 1fr); }
   .empower-grid { grid-template-columns: repeat(2, 1fr); }
   .is-cards { grid-template-columns: repeat(2, 1fr); }
   .is-card { margin-left: 0; margin-top: -1px; min-height: 260px; }
@@ -1508,11 +1452,6 @@ mark { background: transparent; color: var(--red); font-weight: 900; }
   .closing-manifesto { padding: 44px 24px; }
   .cm-text { font-size: clamp(24px, 7vw, 36px); }
   .influence-divider { gap: 16px; }
-  .influence-manifesto { padding-top: 40px; margin-top: 48px; }
-  .im-line { font-size: clamp(20px, 5vw, 28px); gap: 14px; margin-bottom: 14px; }
-  .im-line--lead { font-size: clamp(22px, 6vw, 32px); margin-top: 28px; }
-  .im-line .im-num { font-size: 11px; }
-  .im-divider { margin-top: 24px; }
   .is-cards { grid-template-columns: 1fr; }
   .course-intro { margin-bottom: 28px; }
   .course-imgs { grid-template-columns: 1fr; gap: 12px; }
