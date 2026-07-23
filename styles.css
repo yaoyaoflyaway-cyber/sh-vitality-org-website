@@ -8,6 +8,7 @@
   --line: #e8e4e1;
   --line-soft: #f0eded;
   --red: #c92818;
+  --coral: #F26B5E;            /* 五大计划品牌带珊瑚红背景 */
   --red-bright: #f23709;
   --red-dark: #a01a0d;
   --red-soft: #fbeae8;
@@ -747,15 +748,45 @@ mark { background: transparent; color: var(--red); font-weight: 900; }
 .plan-card h4 { font-size: 20px; font-weight: 800; margin-bottom: 12px; line-height: 1.3; }
 .plan-card p { font-size: 13px; color: var(--ink-soft); line-height: 1.65; }
 
-/* 五大计划 · 品牌插画（对标八大赋能：彩色卡片 + 白间隙） */
-.plans-illustration {
+/* 五大计划 · 珊瑚红品牌带（计划名上下交叉，打破「插图+字块」死板） */
+.plans-band {
   margin: 56px auto 0;
   max-width: 1280px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  background: var(--coral);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
 }
-.plans-illustration img {
+.band-cell {
+  display: grid;
+  grid-template-rows: 60px auto 60px;   /* 上名 / 插图 / 下名 */
+  background: var(--coral);
+  border-right: 1px solid rgba(255, 255, 255, 0.22);
+}
+.band-cell:last-child { border-right: none; }
+.band-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  color: #fff;
+  text-align: center;
+  line-height: 1.25;
+}
+.band-name.top { grid-row: 1; }
+.band-name.bottom { grid-row: 3; }
+.band-figure { grid-row: 2; }
+.band-figure img {
   display: block;
   width: 100%;
   height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
 }
 
 /* ===== 大课 & 训练营（保留优化） ===== */
@@ -1498,6 +1529,9 @@ mark { background: transparent; color: var(--red); font-weight: 900; }
   .fk-six .head p { margin-top: 14px; }
   .fk-six .business-grid { grid-template-columns: 1fr; }
   .fk-six .footer-band { display: block; line-height: 1.8; }
+  .plans-band { grid-template-columns: 1fr; }
+  .band-cell { border-right: none; border-bottom: 1px solid rgba(255, 255, 255, 0.22); }
+  .band-cell:last-child { border-bottom: none; }
 }
 
 /* ===== Responsive ===== */
@@ -1505,6 +1539,8 @@ mark { background: transparent; color: var(--red); font-weight: 900; }
   .statement-grid, .policy-grid, .people-grid, .plans-grid { grid-template-columns: repeat(2, 1fr); }
   .people-grid { grid-template-columns: repeat(2, 1fr); }
   .plans-grid { grid-template-columns: repeat(2, 1fr); }
+  .plans-band { grid-template-columns: repeat(3, 1fr); }
+  .band-cell:nth-child(3) { border-right: none; }
   .influence-layout, .claw-layout, .course-top, .contact-layout { grid-template-columns: 1fr; gap: 40px; }
   .solution-pillars { grid-template-columns: 1fr; }
   .scene-grid, .value-trio, .module-trio, .kids-grid, .empower-grid { grid-template-columns: repeat(2, 1fr); }
@@ -1532,6 +1568,8 @@ mark { background: transparent; color: var(--red); font-weight: 900; }
   .section { padding: 80px 0; }
   .statement-grid, .policy-grid, .people-grid, .plans-grid,
   .scene-grid, .value-trio, .module-trio, .kids-grid, .empower-grid, .jobs-grid { grid-template-columns: 1fr; }
+  .plans-band { grid-template-columns: repeat(2, 1fr); }
+  .band-cell:nth-child(3) { border-right: 1px solid rgba(255, 255, 255, 0.22); }
   .flow-step { min-width: 50%; border-bottom: 1px solid var(--line); }
   .formula-value span:not(.op) { font-size: 16px; padding: 10px 20px; }
   .footer-top { flex-direction: column; gap: 24px; text-align: center; }
