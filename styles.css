@@ -960,34 +960,6 @@ mark { background: transparent; color: var(--red); font-weight: 900; }
 .footer-links a:hover { color: var(--red-bright); }
 .footer-bottom { font-size: 12px; color: #6a6a6a; text-align: center; }
 
-/* ===== 宣言 / MANIFESTO BAND ===== */
-.manifesto-band {
-  background: var(--ink);
-  color: var(--paper);
-  padding: 120px 0;
-  border-top: 1px solid rgba(255,255,255,0.08);
-}
-.manifesto-band .en-label { color: var(--red-bright); }
-.manifesto-list { display: flex; flex-direction: column; }
-.manifesto-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 36px;
-  padding: 40px 0;
-  border-top: 1px solid rgba(255,255,255,0.12);
-}
-.manifesto-item:last-child { border-bottom: 1px solid rgba(255,255,255,0.12); }
-.manifesto-item .mi-num {
-  font-size: 14px; font-weight: 700; color: var(--red-bright);
-  flex: 0 0 auto; padding-top: 6px; letter-spacing: 0.1em;
-}
-.manifesto-item .mi-text {
-  font-size: clamp(26px, 4vw, 52px);
-  font-weight: 900;
-  line-height: 1.18;
-  letter-spacing: -0.02em;
-}
-
 /* 影响力：停止X，开始Y 分隔 */
 .influence-divider {
   display: flex;
@@ -1536,8 +1508,6 @@ mark { background: transparent; color: var(--red); font-weight: 900; }
   .formula-value span:not(.op) { font-size: 16px; padding: 10px 20px; }
   .footer-top { flex-direction: column; gap: 24px; text-align: center; }
   .footer-links { flex-wrap: wrap; justify-content: center; }
-  .manifesto-item { gap: 18px; padding: 28px 0; }
-  .manifesto-item .mi-text { font-size: clamp(24px, 7vw, 34px); }
   .closing-manifesto { padding: 44px 24px; }
   .cm-text { font-size: clamp(24px, 7vw, 36px); }
   .influence-divider { gap: 16px; }
