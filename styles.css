@@ -176,7 +176,7 @@ ul { list-style: none; }
 .hero-line3 .red { color: #ff6b6b; }
 
 mark { background: transparent; color: var(--red); font-weight: 900; }
-.hero-actions { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; }
+.hero-actions { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; margin-top: 50px; }
 .btn {
   display: inline-flex;
   align-items: center;
@@ -193,26 +193,6 @@ mark { background: transparent; color: var(--red); font-weight: 900; }
 .btn-red:hover { background: var(--red-dark); transform: translateY(-2px); box-shadow: var(--shadow-red); }
 .btn-ghost { background: transparent; color: var(--ink); border: 1.5px solid var(--ink); }
 .btn-ghost:hover { border-color: var(--red); color: var(--red); }
-.hero-scroll {
-  position: absolute;
-  bottom: 36px; left: 50%;
-  transform: translateX(-50%);
-  font-size: 11px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.5);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-.hero-scroll i {
-  width: 1px; height: 40px;
-  background: linear-gradient(rgba(255,255,255,0.5), transparent);
-  animation: scrolldown 2s ease-in-out infinite;
-}
-@keyframes scrolldown { 0%,100%{opacity:.3;transform:scaleY(.6)} 50%{opacity:1;transform:scaleY(1)} }
-
 /* ===== Section base ===== */
 .section { padding: 140px 0; }
 .section-warm { background: var(--paper-warm); }
