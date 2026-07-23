@@ -158,8 +158,9 @@ ul { list-style: none; }
 }
 .hero-line2 {
   font-size: clamp(20px, 2.6vw, 30px);
-  color: rgba(255,255,255,0.78);
-  max-width: 820px;
+  color: #fff;
+  max-width: none;
+  white-space: nowrap;
   line-height: 1.6;
   margin: 0 auto 34px;
 }
@@ -1528,6 +1529,7 @@ mark { background: transparent; color: var(--red); font-weight: 900; }
   .is-name { font-size: clamp(32px, 9vw, 44px); }
   .is-result { margin-top: 36px; padding-top: 28px; }
   .hero-line3 { white-space: normal; }
+  .hero-line2 { white-space: normal; }
 }
 
 /* ===== InfluenceClaw 手机屏幕（提取自产品演示源码，转为无依赖样式） ===== */
