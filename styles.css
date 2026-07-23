@@ -1846,3 +1846,33 @@ mark { background: transparent; color: var(--red); font-weight: 900; }
   .talent-claw-embed .workbuddy-icon .icon-fill { fill:#f4f8ff }
   .talent-claw-embed .workbuddy-icon .icon-accent { fill:var(--yellow);stroke:var(--blue) }
   .talent-claw-embed .workbuddy-icon .icon-accent-stroke { fill:var(--yellow);stroke:var(--blue);stroke-width:2.5 }
+/* ===== 新规划站点补充样式（v2 七段式） ===== */
+/* ③ 三大产品线概览：复用 solution-pillar，改三列 */
+.product-lines { grid-template-columns: repeat(3, 1fr); }
+
+/* ④ 产品亮点 · 文案列表 */
+.product-highlights { margin-top: 56px; }
+.product-highlights h3 { font-size: 22px; font-weight: 800; margin-bottom: 20px; }
+.product-highlights ul { list-style: none; display: grid; gap: 14px; }
+.product-highlights li { position: relative; padding-left: 26px; font-size: 15px; color: var(--ink-soft); line-height: 1.7; }
+.product-highlights li::before { content: ''; position: absolute; left: 0; top: 9px; width: 10px; height: 10px; border-radius: 50%; background: var(--red); }
+.product-highlights strong { color: var(--ink); }
+
+/* ⑥ 三类客户入口 */
+.client-entries { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.client-entry { display: block; padding: 36px 30px; border: 1px solid var(--line); border-radius: 6px; background: var(--paper); text-decoration: none; color: inherit; transition: all .4s var(--ease); }
+.client-entry:hover { border-color: var(--red); transform: translateY(-6px); box-shadow: var(--shadow-lg); }
+.client-entry .ce-num { font-size: 14px; font-weight: 800; color: var(--red); margin-bottom: 16px; }
+.client-entry h3 { font-size: 22px; font-weight: 800; margin-bottom: 12px; }
+.client-entry p { font-size: 14px; color: var(--ink-soft); line-height: 1.7; margin-bottom: 18px; }
+.client-entry .ce-link { font-size: 14px; font-weight: 700; color: var(--ink); }
+
+/* ⑤ 培训体系：course/camp 被包进 wrapper，去掉外层多余上边距 */
+#training .course-big:first-of-type { padding-top: 24px; }
+
+@media (max-width: 1024px) {
+  .client-entries, .product-lines { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px) {
+  .client-entries, .product-lines { grid-template-columns: 1fr; }
+}
