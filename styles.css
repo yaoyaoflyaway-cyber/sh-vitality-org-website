@@ -748,19 +748,7 @@ mark { background: transparent; color: var(--red); font-weight: 900; }
 .plan-card h4 { font-size: 20px; font-weight: 800; margin-bottom: 12px; line-height: 1.3; }
 .plan-card p { font-size: 13px; color: var(--ink-soft); line-height: 1.65; }
 
-/* 五大计划 · 珊瑚红品牌带（计划名写入图内，一横条） */
-.plans-illustration {
-  margin: 56px auto 0;
-  max-width: 1280px;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: var(--shadow-lg);
-}
-.plans-illustration img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
+/* 五大计划 · 品牌带（暂未配图） */
 
 /* ===== 大课 & 训练营（保留优化） ===== */
 .course-big { padding: 120px 0; border-top: 1px solid var(--line); }
