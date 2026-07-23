@@ -1,3 +1,13 @@
+// Hero 背景：LQIP 模糊底图即时显示，WebP 加载完成后切换为清晰图
+(function () {
+  const heroBg = document.getElementById('heroBg');
+  if (!heroBg) return;
+  const full = new Image();
+  full.onload = () => heroBg.classList.add('loaded');
+  full.src = 'images/hero-bg-grid.webp';
+  if (full.complete) heroBg.classList.add('loaded');
+})();
+
 // 导航栏滚动效果
 const navbar = document.getElementById('navbar');
 const navToggle = document.getElementById('navToggle');
