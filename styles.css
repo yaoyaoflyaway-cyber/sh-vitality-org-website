@@ -526,8 +526,8 @@ mark { background: transparent; color: var(--red); font-weight: 900; }
   display: block;
 }
 .standard-layout .standard-story {
-  max-width: 760px;
-  margin: 0 auto;
+  max-width: 100%;
+  margin: 0;
 }
 #standard .section-head { text-align: center; }
 /* ===== 解决方案总览 ===== */
