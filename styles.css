@@ -1293,8 +1293,8 @@ mark { background: transparent; color: var(--red); font-weight: 900; }
 
 .fk-row { display: grid; align-items: center; gap: 48px; }
 .fk-row ~ .fk-row { margin-top: 40px; }
-.fk-row-1 { grid-template-columns: 0.9fr 1.1fr; }
-.fk-row-2 { grid-template-columns: 1.1fr 0.9fr; }
+.fk-row-1 { grid-template-columns: 1fr 1fr; }
+.fk-row-2 { grid-template-columns: 1fr 1fr; }
 
 .fk-text { display: flex; flex-direction: column; justify-content: center; padding: 4px 0; }
 .fk-text .fk-kicker { font: 700 12px ui-monospace, SFMono-Regular, Consolas, monospace; color: #0878e8; letter-spacing: .14em; text-transform: uppercase; margin-bottom: 16px; }
@@ -1302,6 +1302,20 @@ mark { background: transparent; color: var(--red); font-weight: 900; }
 .fk-text p { font-size: 15px; line-height: 1.88; color: #3a3f47; margin: 0 0 14px; }
 .fk-text p:last-child { margin-bottom: 0; }
 .fk-text em { font-style: normal; color: #0878e8; font-weight: 800; }
+
+/* 深色背景下的 fk-text */
+.fk-text-dark .fk-kicker { color: var(--red); letter-spacing: .08em; }
+.fk-text-dark h3 { color: #fff; }
+.fk-text-dark p { color: var(--ink-soft); }
+.fk-text-dark em { color: var(--red); }
+
+.fk-media-col { display: flex; flex-direction: column; gap: 24px; }
+.fk-media-col video { display: block; width: 100%; border-radius: 16px; box-shadow: 0 24px 50px rgba(0,0,0,.25); background: #0f172a; }
+.fk-media-col .fk-cover { width: 100%; }
+
+.business-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px 36px; }
+.business-item strong { display: block; font-size: 17px; font-weight: 700; color: #fff; margin-bottom: 8px; }
+.business-item p { font-size: 14px; line-height: 1.7; color: var(--ink-soft); margin: 0; }
 
 /* ---- fk-cover：流量王产品页（严格还原源码「左右结构」+ 卡片化） ---- */
 /* 内部严格保持源码的 .workspace 1.47fr:1fr 左右布局；
@@ -1417,12 +1431,10 @@ mark { background: transparent; color: var(--red); font-weight: 900; }
 /* ---- 移动端：两行堆叠 ---- */
 @media (max-width: 900px) {
   .fk-row-1, .fk-row-2 { grid-template-columns: 1fr; gap: 28px; }
+  .business-list { grid-template-columns: 1fr; }
 }
 @media (max-width: 560px) {
-  .fk-six .head { display: block; }
-  .fk-six .head p { margin-top: 14px; }
-  .fk-six .business-grid { grid-template-columns: 1fr; }
-  .fk-six .footer-band { display: block; line-height: 1.8; }
+  .business-list { gap: 22px; }
 }
 
 /* ===== Responsive ===== */
