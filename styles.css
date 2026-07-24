@@ -1,12 +1,12 @@
 /* ===== Reset & Variables ===== */
 :root {
-  --ink: #050505;
-  --ink-soft: #5a5a5a;
-  --ink-faint: #9a9a9a;
-  --paper: #ffffff;
-  --paper-warm: #faf8f7;
-  --line: #e8e4e1;
-  --line-soft: #f0eded;
+  --ink: #ededed;
+  --ink-soft: #b3b3b3;
+  --ink-faint: #808080;
+  --paper: #0a0a0a;
+  --paper-warm: #161616;
+  --line: rgba(255,255,255,0.14);
+  --line-soft: rgba(255,255,255,0.08);
   --red: #c92818;
   --coral: #F26B5E;            /* 五大计划品牌带珊瑚红背景 */
   --red-bright: #f23709;
@@ -386,11 +386,11 @@ mark { background: transparent; color: var(--red); font-weight: 900; }
 
 /* ===== 影响力时代 ===== */
 .influence {
-  background: var(--ink);
-  color: var(--paper);
+  background: #0f0f0f;
+  color: #fff;
 }
 .influence .en-label { color: var(--red-bright); }
-.influence .big-head { color: var(--paper); }
+.influence .big-head { color: #fff; }
 .influence .section-sub { color: #b8b8b8; }
 .influence-system { margin: 72px 0 52px; }
 
@@ -399,7 +399,7 @@ mark { background: transparent; color: var(--red); font-weight: 900; }
   font-size: clamp(28px, 4.2vw, 52px);
   font-weight: 900;
   letter-spacing: -0.02em;
-  color: var(--paper);
+  color: #fff;
   margin-bottom: 12px;
 }
 .is-sub {
@@ -472,7 +472,7 @@ mark { background: transparent; color: var(--red); font-weight: 900; }
 .is-role {
   font-size: 17px;
   font-weight: 700;
-  color: var(--paper);
+  color: #fff;
   margin-bottom: 26px;
   line-height: 1.35;
 }
@@ -501,7 +501,7 @@ mark { background: transparent; color: var(--red); font-weight: 900; }
   font-size: clamp(20px, 2.6vw, 32px);
   font-weight: 700;
   line-height: 1.45;
-  color: var(--paper);
+  color: #fff;
   padding-top: 36px;
   border-top: 1px solid rgba(255,255,255,0.12);
 }
@@ -646,8 +646,8 @@ mark { background: transparent; color: var(--red); font-weight: 900; }
 .formula-box {
   margin: 40px 0;
   padding: 48px;
-  background: var(--ink);
-  color: var(--paper);
+  background: #141414;
+  color: #fff;
   border-radius: 4px;
   text-align: center;
 }
@@ -750,7 +750,7 @@ mark { background: transparent; color: var(--red); font-weight: 900; }
 .kids-skills span { font-size: 11px; padding: 5px 11px; background: var(--red-soft); color: var(--red); border-radius: 100px; }
 .kids-conclusion {
   margin-top: 48px; padding: 40px;
-  background: var(--ink); color: var(--paper); border-radius: 4px; text-align: center;
+  background: #1a1a1a; color: #fff; border-radius: 4px; text-align: center;
 }
 .kids-conclusion strong { font-size: 22px; font-weight: 800; color: var(--red-bright); }
 .kids-conclusion p { font-size: 15px; line-height: 1.7; margin-top: 8px; color: #d0d0d0; }
@@ -843,14 +843,14 @@ mark { background: transparent; color: var(--red); font-weight: 900; }
 .empower-card {
   border: 1px solid var(--line);
   border-radius: 4px;
+  background: #141414;
   overflow: hidden;
-  background: #fff;
   display: flex;
   flex-direction: column;
   transition: transform .35s, border-color .35s, box-shadow .35s;
 }
 .empower-card:hover { transform: translateY(-6px); border-color: var(--red); box-shadow: var(--shadow-red); }
-.ec-art { line-height: 0; background: #faf8f7; padding: 18px 18px 8px; }
+.ec-art { line-height: 0; background: rgba(255,255,255,0.04); padding: 18px 18px 8px; }
 .ec-art img { width: 74%; height: auto; display: block; margin: 0 auto; border-radius: 4px; }
 .ec-body { padding: 18px 22px 26px; display: flex; flex-direction: column; }
 .ec-num { font-size: 13px; font-weight: 800; letter-spacing: .12em; color: var(--red); margin-bottom: 8px; }
@@ -889,7 +889,7 @@ mark { background: transparent; color: var(--red); font-weight: 900; }
 }
 
 /* ===== Footer ===== */
-.footer { background: var(--ink); color: var(--paper); padding: 64px 0 32px; }
+.footer { background: #0a0a0a; color: #ededed; padding: 64px 0 32px; }
 .footer-inner { max-width: var(--max); margin: 0 auto; padding: 0 48px; }
 .footer-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px; padding-bottom: 32px; border-bottom: 1px solid rgba(255,255,255,0.12); }
 .footer-brand { display: flex; align-items: center; gap: 16px; }
@@ -913,7 +913,7 @@ mark { background: transparent; color: var(--red); font-weight: 900; }
 }
 .influence-divider .id-from { font-size: clamp(20px, 3vw, 34px); font-weight: 700; color: #8a8a8a; text-decoration: line-through; text-decoration-color: rgba(255,255,255,0.3); }
 .influence-divider .id-arrow { font-size: 26px; color: var(--red-bright); font-weight: 700; }
-.influence-divider .id-to { font-size: clamp(24px, 3.6vw, 44px); font-weight: 900; color: var(--paper); letter-spacing: -0.02em; }
+.influence-divider .id-to { font-size: clamp(24px, 3.6vw, 44px); font-weight: 900; color: #fff; letter-spacing: -0.02em; }
 
 .influence-statement {
   margin-top: 64px;
@@ -925,8 +925,8 @@ mark { background: transparent; color: var(--red); font-weight: 900; }
 
 /* 联系我们：收尾宣言 */
 .closing-manifesto {
-  background: var(--ink);
-  color: var(--paper);
+  background: #0f0f0f;
+  color: #fff;
   padding: 72px 56px;
   border-radius: 4px;
   margin-bottom: 24px;
@@ -948,7 +948,7 @@ mark { background: transparent; color: var(--red); font-weight: 900; }
 
 /* 影响力密码说明 */
 .pw-explain { margin-top: 56px; }
-.pw-title { font-size: clamp(20px, 2.6vw, 30px); font-weight: 800; margin-bottom: 14px; color: var(--paper); }
+.pw-title { font-size: clamp(20px, 2.6vw, 30px); font-weight: 800; margin-bottom: 14px; color: #fff; }
 .pw-desc { font-size: 15px; color: #b0b0b0; line-height: 1.85; max-width: 720px; margin-bottom: 40px; }
 
 /* 五大计划：目标行 */
@@ -991,9 +991,9 @@ mark { background: transparent; color: var(--red); font-weight: 900; }
 .biz-house * { box-sizing: border-box; }
 
 .biz-house .layout-frame {
-  border: 2px solid var(--ink);
+  border: 2px solid rgba(255,255,255,0.14);
   padding: 26px 26px 30px;
-  background: #fff;
+  background: #141414;
 }
 
 .biz-house .statements {
@@ -1086,7 +1086,7 @@ mark { background: transparent; color: var(--red); font-weight: 900; }
   padding: 18px 40px;
   border: 3px solid var(--ink);
   border-radius: 50%;
-  background: #fff;
+  background: #1a1a1a;
   font-size: 64px;
   font-weight: 900;
   margin-top: 150px;
@@ -1213,9 +1213,9 @@ mark { background: transparent; color: var(--red); font-weight: 900; }
   align-items: center;
   gap: 28px;
   margin-top: 12px;
-  border: 2px solid var(--ink);
+  border: 2px solid rgba(255,255,255,0.14);
   padding: 28px 30px;
-  background: var(--ink);
+  background: #1a1a1a;
   color: #fff;
 }
 
@@ -1387,7 +1387,7 @@ mark { background: transparent; color: var(--red); font-weight: 900; }
 .fk-six .business:nth-child(2) .mark { color: rgba(255,255,255,.28); }
 .fk-six .business .tag { position: absolute; top: 14px; right: 14px; padding: 3px 7px; border: 1px solid currentColor; font-size: 10px; font-weight: 800; }
 
-.fk-six .footer-band { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-top: 10px; padding: 12px 16px; background: var(--ink); color: #fff; }
+.fk-six .footer-band { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-top: 10px; padding: 12px 16px; background: #1a1a1a; color: #fff; }
 .fk-six .footer-band strong { color: var(--yellow); font-size: 13px; }
 .fk-six .footer-band p { margin: 0; color: #c7cbd3; font-size: 11px; }
 
