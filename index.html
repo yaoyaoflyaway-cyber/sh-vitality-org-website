@@ -142,7 +142,7 @@
           <div class="process-step"><strong>定时发布</strong><span>按节奏推送到平台</span></div>
         </section>
   </div>
-</div>
+</section>
 <script>
   (function () {
     const cover = document.querySelector('.fk-cover');
@@ -168,18 +168,22 @@
   })();
 </script>
 </div>
+</div>
 <script>
           (function () {
             var cover = document.querySelector('.fk-cover');
             if (!cover) return;
             var fit = function () {
               var w = cover.clientWidth || 1;
-              cover.style.setProperty('--cover-scale', Math.min(1, w / 1280));
+              var h = cover.clientHeight || 1;
+              var scale = Math.min(w / 1280, h / 742);
+              cover.style.setProperty('--cover-scale', scale);
             };
             fit();
             window.addEventListener('resize', fit);
           })();
         </script>
+</div>
 <!-- Row 2：六大业务视频 + 业务说明 -->
 <div class="fk-row fk-row-2 reveal">
   <div class="fk-media-col">
