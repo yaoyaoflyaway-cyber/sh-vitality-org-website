@@ -515,7 +515,7 @@ mark { background: transparent; color: var(--red); font-weight: 900; }
   font-size: clamp(16px, 2vw, 20px);
   line-height: 1.9;
   color: #fff;
-  font-weight: 700;
+  font-weight: 400;
   text-indent: 2em;
   letter-spacing: 0.01em;
   margin-bottom: 28px;
