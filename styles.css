@@ -550,6 +550,7 @@ mark { background: transparent; color: var(--red); font-weight: 900; }
   font-size: 13px; font-weight: 700; color: var(--red); margin-bottom: 20px;
 }
 .solution-pillar h3 { font-size: 30px; font-weight: 800; margin-bottom: 10px; letter-spacing: -0.02em; }
+.solution-pillar h3 span { display: block; }
 .solution-pillar .product-slogan { font-size: 18px; font-weight: 700; color: var(--ink); line-height: 1.4; margin-bottom: 14px; }
 .solution-pillar p { font-size: 15px; color: var(--ink-soft); line-height: 1.7; margin-bottom: 20px; }
 .solution-pillar .sp-link {
