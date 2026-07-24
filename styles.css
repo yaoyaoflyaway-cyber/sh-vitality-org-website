@@ -513,10 +513,12 @@ mark { background: transparent; color: var(--red); font-weight: 900; }
 }
 .standard-story p {
   font-size: clamp(16px, 2vw, 20px);
-  line-height: 1.85;
+  line-height: 1.9;
   color: #fff;
-  font-weight: 800;
-  margin-bottom: 22px;
+  font-weight: 700;
+  text-indent: 2em;
+  letter-spacing: 0.01em;
+  margin-bottom: 28px;
 }
 .standard-story p:last-child { margin-bottom: 0; }
 .standard-story strong { color: var(--ink); font-weight: 700; }
@@ -524,9 +526,10 @@ mark { background: transparent; color: var(--red); font-weight: 900; }
   display: block;
 }
 .standard-layout .standard-story {
-  max-width: 920px;
-  margin: 0;
+  max-width: 760px;
+  margin: 0 auto;
 }
+#standard .section-head { text-align: center; }
 /* ===== 解决方案总览 ===== */
 .solution-pillars {
   display: grid;
@@ -1472,6 +1475,8 @@ mark { background: transparent; color: var(--red); font-weight: 900; }
   .is-result { margin-top: 36px; padding-top: 28px; }
   .hero-line3 { white-space: normal; }
   .hero-line2 { white-space: normal; }
+  #standard .standard-layout .standard-story { max-width: 100%; }
+  #standard .standard-story p { text-indent: 1.5em; }
 }
 
 /* ===== InfluenceClaw 手机屏幕（提取自产品演示源码，转为无依赖样式） ===== */
