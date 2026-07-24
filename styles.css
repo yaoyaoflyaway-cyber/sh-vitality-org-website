@@ -1312,6 +1312,28 @@ mark { background: transparent; color: var(--red); font-weight: 900; }
 .fk-media-col { display: flex; flex-direction: column; gap: 24px; }
 .fk-media-col video { display: block; width: 100%; border-radius: 16px; box-shadow: 0 24px 50px rgba(0,0,0,.25); background: #fff; }
 .fk-media-col .fk-cover { width: 100%; }
+.fk-video-wrap { position: relative; line-height: 0; }
+.fk-video-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 68px;
+  height: 68px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  color: #0878e8;
+  background: rgba(255, 255, 255, .92);
+  box-shadow: 0 10px 26px rgba(8, 120, 232, .28);
+  cursor: pointer;
+  transition: opacity .2s ease, transform .2s ease;
+}
+.fk-video-play svg { width: 30px; height: 30px; margin-left: 4px; }
+.fk-video-play:hover { transform: translate(-50%, -50%) scale(1.06); }
+.fk-video-wrap.is-playing .fk-video-play { opacity: 0; pointer-events: none; }
 
 .business-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px 36px; }
 .business-item strong { display: block; font-size: 16px; font-weight: 700; color: #fff; margin-bottom: 3px; }

@@ -229,7 +229,32 @@
 <!-- Row 2：六大业务视频 + 业务说明 -->
 <div class="fk-row fk-row-2 reveal">
   <div class="fk-media-col">
-    <video autoplay muted loop playsinline preload="metadata" src="assets/flowking.mp4"></video>
+    <div class="fk-video-wrap">
+      <video autoplay muted loop playsinline preload="metadata" src="assets/flowking.mp4"></video>
+      <button class="fk-video-play" type="button" aria-label="播放或暂停视频">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8 5.5v13l11-6.5-11-6.5Z" fill="currentColor"/></svg>
+      </button>
+    </div>
+    <script>
+      (function () {
+        var wrap = document.querySelector('.fk-video-wrap');
+        if (!wrap) return;
+        var video = wrap.querySelector('video');
+        var btn = wrap.querySelector('.fk-video-play');
+        var sync = function () { wrap.classList.toggle('is-playing', !video.paused); };
+        video.addEventListener('play', sync);
+        video.addEventListener('pause', sync);
+        wrap.addEventListener('click', function (e) {
+          if (e.target.closest('.fk-video-play')) return;
+          video.paused ? video.play() : video.pause();
+        });
+        btn.addEventListener('click', function (e) {
+          e.stopPropagation();
+          video.paused ? video.play() : video.pause();
+        });
+        sync();
+      })();
+    </script>
   </div>
   <div class="fk-text fk-text-dark">
     <h3>多元业务·一套增长底座</h3>
