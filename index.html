@@ -234,6 +234,9 @@
       <button class="fk-video-play" type="button" aria-label="播放或暂停视频">
         <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8 5.5v13l11-6.5-11-6.5Z" fill="currentColor"/></svg>
       </button>
+      <button class="fk-video-fs" type="button" aria-label="全屏播放">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 9V5a1 1 0 0 1 1-1h4M20 9V5a1 1 0 0 0-1-1h-4M4 15v4a1 1 0 0 0 1 1h4M20 15v4a1 1 0 0 1-1 1h-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
     </div>
     <script>
       (function () {
@@ -252,6 +255,20 @@
           e.stopPropagation();
           video.paused ? video.play() : video.pause();
         });
+        var fsBtn = wrap.querySelector('.fk-video-fs');
+        if (fsBtn) {
+          fsBtn.addEventListener('click', function (e) {
+            e.stopPropagation();
+            try {
+              if (document.fullscreenElement) {
+                document.exitFullscreen();
+              } else if (video.requestFullscreen) {
+                var pr = video.requestFullscreen();
+                if (pr && pr.catch) pr.catch(function () {});
+              }
+            } catch (err) {}
+          });
+        }
         sync();
       })();
     </script>
