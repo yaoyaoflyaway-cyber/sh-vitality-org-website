@@ -1317,13 +1317,11 @@ mark { background: transparent; color: var(--red); font-weight: 900; }
 .business-item strong { display: block; font-size: 17px; font-weight: 700; color: #fff; margin-bottom: 8px; }
 .business-item p { font-size: 14px; line-height: 1.7; color: var(--ink-soft); margin: 0; }
 
-/* ---- fk-cover：流量王产品页（严格还原源码「左右结构」+ 卡片化） ---- */
-/* 内部严格保持源码的 .workspace 1.47fr:1fr 左右布局；
-   整体按固定 1280px 渲染后由 JS 计算 --cover-scale 用 zoom 缩放入列，保证左右比例不变。 */
+/* ---- fk-cover：流量王产品页 ---- */
 .fk-cover {
   --blue:#0878e8; --ink:#202124; --muted:#70747c;
   --bg:#f7f8fa; --panel:#ffffff; --soft:#f2f3f6; --line:#dcdfe5;
-  --cover-scale: 0.5;
+  --cover-scale: 1;
   font-family: Inter, "Noto Sans SC", "Microsoft YaHei", Arial, sans-serif;
   color: var(--ink);
   background: var(--panel);
@@ -1336,49 +1334,214 @@ mark { background: transparent; color: var(--red); font-weight: 900; }
 .fk-cover * { box-sizing: border-box; }
 .fk-cover button, .fk-cover input { font: inherit; }
 
-.fk-cover .shell { width: 1280px; min-height: 1062px; margin: 0; padding: 20px 14px 42px; zoom: var(--cover-scale); }
-
-.fk-cover .workspace { display: grid; grid-template-columns: minmax(0, 1.47fr) minmax(420px, 1fr); align-items: center; gap: 36px; min-height: 1000px; padding: 120px 0 0 0; }
-.fk-cover .hero-copy { width: 700px; margin-left: 0; padding-left: 0; }
-.fk-cover .hero-title { margin: 0; color: var(--ink); font-size: clamp(72px, 7.2vw, 96px); font-weight: 800; letter-spacing: 0; line-height: 1.16; }
-.fk-cover .hero-description { max-width: 700px; margin: 24px 0 0; color: var(--muted); font-size: 24px; font-weight: 400; letter-spacing: 0; line-height: 1.7; }
-.fk-cover .desktop-break { display: inline; }
-
-.fk-cover .feature-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); width: 100%; margin: 110px 0 0; }
-.fk-cover .feature { display: grid; grid-template-columns: 85px minmax(0, 1fr); grid-template-rows: 70px auto; gap: 14px; min-width: 0; padding: 0 14px; }
-.fk-cover .feature + .feature { border-left: 1px solid var(--line); }
-.fk-cover .feature-icon { width: 70px; height: 70px; color: var(--blue); }
-.fk-cover .feature-title { grid-column: 2; grid-row: 1; align-self: center; margin: 0 0 12px; font-size: 28px; font-weight: 800; line-height: 1.2; white-space: nowrap; }
-.fk-cover .feature-description { grid-column: 1 / -1; grid-row: 2; margin: 0; color: var(--muted); font-size: 18px; line-height: 28px; white-space: normal; text-align: justify; }
-
-.fk-cover .process-card { display: grid; grid-template-columns: minmax(0,1fr) 56px minmax(0,1fr) 56px minmax(0,1fr) 56px minmax(0,1fr); align-items: center; width: 100%; min-height: 195px; margin-top: 105px; padding: 32px 36px; border: 1px solid var(--line); border-radius: 14px; background: var(--panel); }
+.fk-cover .shell {
+      width: 1280px;
+      min-height: 742px;
+      margin: 0 auto;
+      padding: 20px 22px 42px;
+      zoom: var(--cover-scale);
+    }
+.fk-cover .workspace {
+      display: grid;
+      grid-template-columns: minmax(0, 1.47fr) minmax(420px, 1fr);
+      align-items: center;
+      gap: 46px;
+      min-height: 635px;
+      padding: 74px 0 0 30px;
+    }
+.fk-cover .hero-copy {
+      width: min(100%, 690px);
+      padding-left: 0;
+    }
+.fk-cover .hero-title {
+      margin: 0;
+      margin-left: 91px;
+      color: var(--ink);
+      font-size: clamp(42px, 4.25vw, 57px);
+      font-weight: 800;
+      letter-spacing: 0;
+      line-height: 1.16;
+    }
+.fk-cover .hero-description {
+      max-width: 570px;
+      margin: 18px 0 0 91px;
+      color: var(--muted);
+      font-size: 18px;
+      font-weight: 400;
+      letter-spacing: 0;
+      line-height: 1.75;
+    }
+.fk-cover .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      width: 100%;
+      margin: 70px 0 0 32px;
+    }
+.fk-cover .feature {
+      display: grid;
+      grid-template-columns: 51px minmax(0, 1fr);
+      grid-template-rows: 42px 20px;
+      gap: 8px;
+      min-width: 0;
+      padding: 0 8px 0 0;
+    }
+.fk-cover .feature + .feature {
+      padding-left: 16px;
+      border-left: 1px solid var(--line);
+    }
+.fk-cover .feature-icon {
+      width: 42px;
+      height: 42px;
+      color: var(--blue);
+    }
+.fk-cover .feature-title {
+      grid-column: 2;
+      grid-row: 1;
+      align-self: center;
+      margin: 0 0 7px;
+      font-size: 19px;
+      font-weight: 800;
+      line-height: 1.2;
+      white-space: nowrap;
+    }
+.fk-cover .feature-description {
+      grid-column: 1 / -1;
+      grid-row: 2;
+      margin: 0;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 20px;
+      white-space: nowrap;
+    }
+.fk-cover .process-card {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 34px minmax(0, 1fr) 34px minmax(0, 1fr) 34px minmax(0, 1fr);
+      align-items: center;
+      width: min(100%, 690px);
+      min-height: 114px;
+      margin-top: 66px;
+      padding: 18px 22px;
+      border: 1px solid var(--line);
+      border-radius: 9px;
+      background: var(--panel);
+    }
 .fk-cover .process-step { min-width: 0; text-align: center; }
-.fk-cover .process-step strong { display: block; font-size: 26px; line-height: 1.2; white-space: nowrap; }
-.fk-cover .process-step span { display: block; margin-top: 16px; color: var(--muted); font-size: 20px; line-height: 28px; white-space: normal; text-align: justify; }
-.fk-cover .process-arrow { color: #8a8e95; font-size: 48px; font-weight: 300; line-height: 1; text-align: center; }
-
-.fk-cover .login-card { width: 100%; max-width: 455px; min-height: 1000px; justify-self: end; padding: 100px 38px 72px; border: 1px solid #d9dce2; border-radius: 26px; background: var(--panel); box-shadow: 0 22px 44px rgba(23,35,52,.1); }
-.fk-cover .login-title { margin: 0; font-size: 52px; font-weight: 800; line-height: 1.2; }
-.fk-cover .title-rule { width: 100px; height: 7px; margin-top: 40px; background: var(--blue); }
-.fk-cover .bind-status { display: flex; align-items: center; gap: 15px; margin-top: 65px; color: var(--muted); font-size: 24px; }
-.fk-cover .bind-status svg { width: 38px; height: 38px; color: var(--blue); }
+.fk-cover .process-step strong { display: block; font-size: 18px; line-height: 1.2; }
+.fk-cover .process-step span { display: block; margin-top: 12px; color: var(--muted); font-size: 13px; line-height: 1.35; white-space: nowrap; }
+.fk-cover .process-arrow { color: #8a8e95; font-size: 28px; font-weight: 300; line-height: 1; text-align: center; }
+.fk-cover .login-card {
+      width: 100%;
+      max-width: 475px;
+      min-height: 568px;
+      justify-self: end;
+      padding: 59px 38px 44px;
+      border: 1px solid #d9dce2;
+      border-radius: 16px;
+      background: var(--panel);
+      box-shadow: 0 22px 44px rgba(23, 35, 52, .1);
+    }
+.fk-cover .login-title {
+      margin: 0;
+      font-size: 31px;
+      font-weight: 800;
+      line-height: 1.2;
+    }
+.fk-cover .title-rule { width: 59px; height: 4px; margin-top: 20px; background: var(--blue); }
+.fk-cover .bind-status {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      margin-top: 32px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+.fk-cover .bind-status svg { width: 22px; height: 22px; color: var(--blue); }
 .fk-cover .bind-status strong { color: var(--blue); font-weight: 700; }
 .fk-cover .bind-status em { margin: 0 2px; color: #b5b7bc; font-style: normal; }
-.fk-cover .login-form { margin-top: 85px; }
-.fk-cover .field { display: grid; grid-template-columns: 110px minmax(0, 1fr); height: 100px; overflow: hidden; border: 1px solid #dedfe5; border-radius: 12px; background: var(--soft); }
-.fk-cover .field + .field { margin-top: 48px; }
-.fk-cover .field-label { display: flex; align-items: center; padding-left: 22px; border-right: 1px solid #dedfe5; background: #f0f1f4; font-size: 22px; font-weight: 700; }
-.fk-cover .field-control { display: flex; align-items: center; min-width: 0; padding: 0 18px 0 22px; }
-.fk-cover .field input { width: 100%; min-width: 0; border: 0; outline: 0; color: var(--ink); background: transparent; font-size: 22px; }
+.fk-cover .login-form { margin-top: 41px; }
+.fk-cover .field {
+      display: grid;
+      grid-template-columns: 84px minmax(0, 1fr);
+      height: 59px;
+      overflow: hidden;
+      border: 1px solid #dedfe5;
+      border-radius: 7px;
+      background: var(--soft);
+    }
+.fk-cover .field + .field { margin-top: 28px; }
+.fk-cover .field-label {
+      display: flex;
+      align-items: center;
+      padding-left: 18px;
+      border-right: 1px solid #dedfe5;
+      background: #f0f1f4;
+      font-size: 16px;
+      font-weight: 700;
+    }
+.fk-cover .field-control {
+      display: flex;
+      align-items: center;
+      min-width: 0;
+      padding: 0 13px 0 16px;
+    }
+.fk-cover .field input {
+      width: 100%;
+      min-width: 0;
+      border: 0;
+      outline: 0;
+      color: var(--ink);
+      background: transparent;
+      font-size: 16px;
+    }
 .fk-cover .field input::placeholder { color: #8d9097; opacity: 1; }
-.fk-cover .field-action { display: grid; width: 42px; height: 52px; flex: 0 0 42px; place-items: center; padding: 0; border: 0; color: #888c94; background: transparent; cursor: pointer; }
-.fk-cover .field-action svg { width: 34px; height: 34px; }
-.fk-cover .submit-button { width: 100%; height: 100px; margin-top: 22px; border: 0; border-radius: 12px; color: #fff; background: var(--blue); box-shadow: 0 11px 23px rgba(8,120,232,.22); cursor: pointer; font-size: 40px; font-weight: 800; }
-.fk-cover .secure-login { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 22px; margin-top: 130px; color: #858890; font-size: 20px; font-weight: 800; letter-spacing: .02em; white-space: nowrap; }
-.fk-cover .secure-login::before, .fk-cover .secure-login::after { height: 2px; content: ""; background: #e2e3e7; }
-.fk-cover .secure-login span { display: flex; align-items: center; gap: 16px; }
-.fk-cover .secure-login svg { width: 28px; height: 28px; }
+.fk-cover .field-action {
+      display: grid;
+      width: 24px;
+      height: 30px;
+      flex: 0 0 24px;
+      place-items: center;
+      padding: 0;
+      border: 0;
+      color: #888c94;
+      background: transparent;
+      cursor: pointer;
+    }
+.fk-cover .field-action svg { width: 20px; height: 20px; }
+.fk-cover .submit-button {
+      width: 100%;
+      height: 59px;
+      margin-top: 13px;
+      border: 0;
+      border-radius: 7px;
+      color: #fff;
+      background: var(--blue);
+      box-shadow: 0 11px 23px rgba(8, 120, 232, .22);
+      cursor: pointer;
+      font-size: 24px;
+      font-weight: 800;
+    }
+.fk-cover .submit-button:hover { background: var(--blue); }
+.fk-cover .submit-button:active { transform: translateY(1px); }
+.fk-cover .secure-login {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      gap: 13px;
+      margin-top: 59px;
+      color: #858890;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .02em;
+      white-space: nowrap;
+    }
+    .secure-login::before,
+.fk-cover .secure-login::after { height: 1px; content: ""; background: #e2e3e7; }
+.fk-cover .secure-login span { display: flex; align-items: center; gap: 10px; }
+.fk-cover .secure-login svg { width: 17px; height: 17px; }
+.fk-cover .helper { display: none; margin: 13px 0 0; color: var(--blue); font-size: 13px; text-align: center; }
+  
 .fk-cover .helper { display: none; }
+
 
 /* ---- fk-six：六大业务一套增长底座（顶/底文字已去除） ---- */
 .fk-six {
