@@ -748,7 +748,7 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
   position: relative; overflow: hidden; transition: all .4s var(--ease);
 }
 .module-card:hover { border-color: var(--green-text); transform: translateY(-4px); box-shadow: var(--shadow-md); }
-.module-card::before { content:''; position: absolute; top:0; left:0; right:0; height: 4px; background: var(--red); }
+.module-card::before { content:''; position: absolute; top:0; left:0; right:0; height: 4px; background: var(--green-text); }
 .module-card .mc-letter { font-size: 48px; font-weight: 900; color: var(--green-text); line-height: 1; margin-bottom: 12px; }
 .module-card .mc-head { font-size: 18px; font-weight: 700; margin-bottom: 4px; }
 .module-card .mc-sub { font-size: var(--text-xs); color: var(--ink-soft); margin-bottom: 16px; }
@@ -756,7 +756,7 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
   font-size: var(--text-sm); color: var(--ink-soft); line-height: 1.6;
   padding-left: 16px; position: relative; margin-bottom: 6px;
 }
-.module-card ul li::before { content:''; position: absolute; left: 0; top: 9px; width: 5px; height: 5px; background: var(--red-bright); border-radius: 50%; }
+.module-card ul li::before { content:''; position: absolute; left: 0; top: 9px; width: 5px; height: 5px; background: var(--green-text); border-radius: 50%; }
 .module-card .mc-foot { font-size: 13px; font-weight: 600; color: var(--green-text); margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--line-soft); }
 
 /* 训练营 */
