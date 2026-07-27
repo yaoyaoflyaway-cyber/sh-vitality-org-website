@@ -846,7 +846,7 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
   color: var(--green-text);
   letter-spacing: 0.01em;
   margin-bottom: 14px;
-  border-left: 8px solid var(--red);
+  border-left: 8px solid var(--green-text);
   padding-left: 18px;
   line-height: 1;
 }
