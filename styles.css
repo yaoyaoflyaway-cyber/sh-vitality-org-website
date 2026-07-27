@@ -444,12 +444,12 @@ mark { background: transparent; color: var(--red); font-weight: 900; }
 .is-card--net .is-name { color: #5db8ff; }
 .is-card--net .is-num { color: rgba(93, 184, 255, 0.85); }
 
-.is-card--biz { background: rgba(244, 244, 240, 0.95); }
-.is-card--biz .is-name { color: var(--ink); }
-.is-card--biz .is-num { color: #6a6a6a; }
+.is-card--biz { background: rgba(255, 255, 255, 0.08); }
+.is-card--biz .is-name { color: #fff; }
+.is-card--biz .is-num { color: rgba(255, 255, 255, 0.7); }
 .is-card--biz .is-role,
-.is-card--biz .is-points { color: var(--ink); }
-.is-card--biz .is-points li::before { background: var(--ink); }
+.is-card--biz .is-points { color: rgba(255, 255, 255, 0.9); }
+.is-card--biz .is-points li::before { background: rgba(255, 255, 255, 0.7); }
 
 .is-card--inf { background: rgba(251, 113, 133, 0.12); }
 .is-card--inf .is-name { color: #fb7185; }
@@ -749,10 +749,10 @@ mark { background: transparent; color: var(--red); font-weight: 900; }
   transition: all .4s var(--ease); background: var(--paper);
 }
 .kids-card:hover { border-color: var(--red); transform: translateY(-6px); box-shadow: var(--shadow-lg); }
-.kids-header { padding: 28px; background: var(--red-soft); }
-.kids-header .kh-stage { font-size: 12px; font-weight: 700; letter-spacing: 0.1em; color: var(--red); text-transform: uppercase; }
-.kids-header h4 { font-size: 24px; font-weight: 800; margin: 6px 0; }
-.kids-header .kh-age { font-size: 13px; color: var(--ink-soft); }
+.kids-header { padding: 28px; background: var(--red-soft); color: #111; }
+.kids-header .kh-stage { font-size: 12px; font-weight: 700; letter-spacing: 0.1em; color: #a01a0d; text-transform: uppercase; }
+.kids-header h4 { font-size: 24px; font-weight: 800; margin: 6px 0; color: #111; }
+.kids-header .kh-age { font-size: 13px; color: #444; }
 .kids-body { padding: 28px; }
 .kids-body .kb-goal { font-size: 13px; color: var(--ink); line-height: 1.6; margin-bottom: 18px; }
 .kids-body .kb-goal strong { color: var(--red); }
@@ -996,6 +996,9 @@ mark { background: transparent; color: var(--red); font-weight: 900; }
   --line: #cfd5de;
   --muted: #66707c;
   margin-top: 28px;
+  padding: 48px 0;
+  border-radius: 8px;
+  background: var(--paper);
   color: var(--ink);
   font-family: "Noto Sans SC", "Microsoft YaHei", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -1004,10 +1007,12 @@ mark { background: transparent; color: var(--red); font-weight: 900; }
 .biz-house * { box-sizing: border-box; }
 
 .biz-house .layout-frame {
-  border: 2px solid rgba(255,255,255,0.14);
+  border: 2px solid rgba(0,0,0,0.12);
   padding: 26px 26px 30px;
-  background: #141414;
+  background: #fff;
 }
+
+.biz-house .orbit-core { color: #fff; }
 
 .biz-house .statements {
   display: grid;
