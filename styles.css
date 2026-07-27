@@ -826,13 +826,12 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
 .ip-copy { max-width: 1200px; }
 .ip-headline {
   font-family: "PingFang SC", "Noto Sans SC", "Microsoft YaHei", sans-serif;
-  font-size: clamp(48px, 7.2vw, 104px);
-  font-weight: 900;
-  line-height: 1.05;
+  font-size: clamp(30px, 4.2vw, 56px);
+  font-weight: 800;
+  line-height: 1.15;
   letter-spacing: -0.02em;
   color: var(--ink);
   margin: 0 0 48px;
-  text-shadow: 0 2px 0 rgba(0,0,0,0.05);
 }
 .ip-headline em {
   font-style: normal;
@@ -861,7 +860,7 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
 }
 @media (max-width: 900px) {
   .ip-stack { grid-template-columns: 1fr; }
-  .ip-headline { font-size: clamp(36px, 9vw, 56px); }
+  .ip-headline { font-size: clamp(26px, 7vw, 40px); }
   .ip-goal-label { font-size: 22px; }
 }
 .business-img-box {
