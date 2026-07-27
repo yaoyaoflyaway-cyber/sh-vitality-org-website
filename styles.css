@@ -731,7 +731,7 @@ mark { background: transparent; color: var(--red); font-weight: 900; }
   max-width: 100%;
   margin-bottom: 40px;
 }
-.course-imgs { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.course-imgs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
 .course-img-box { border: 1px solid var(--line); border-radius: 4px; overflow: hidden; }
 .course-img-box img { width: 100%; aspect-ratio: 3/2; object-fit: cover; display: block; }
 .course-intro h3 { font-size: clamp(30px, 4vw, 48px); font-weight: 900; letter-spacing: -0.02em; margin-bottom: 20px; }
