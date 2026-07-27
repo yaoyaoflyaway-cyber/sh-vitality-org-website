@@ -830,7 +830,7 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
   font-weight: 800;
   line-height: 1.15;
   letter-spacing: -0.02em;
-  color: var(--ink);
+  color: var(--green-text);
   margin: 0 0 48px;
 }
 .ip-headline em {
