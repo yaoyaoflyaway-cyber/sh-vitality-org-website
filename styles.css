@@ -222,9 +222,10 @@ mark { background: transparent; color: var(--red); font-weight: 900; }
 .section-sub {
   font-size: clamp(16px, 1.8vw, 19px);
   color: var(--ink-soft);
-  max-width: 640px;
+  max-width: 100%;
   margin-bottom: 64px;
   line-height: 1.7;
+  text-indent: 2em;
 }
 .section-head { margin-bottom: 64px; }
 
@@ -715,7 +716,7 @@ mark { background: transparent; color: var(--red); font-weight: 900; }
 .course-big { padding: 120px 0; border-top: 1px solid var(--line); }
 .course-top { margin-bottom: 56px; }
 .course-intro {
-  max-width: 860px;
+  max-width: 100%;
   margin-bottom: 40px;
 }
 .course-imgs { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
@@ -723,7 +724,7 @@ mark { background: transparent; color: var(--red); font-weight: 900; }
 .course-img-box img { width: 100%; aspect-ratio: 3/2; object-fit: cover; display: block; }
 .course-intro h3 { font-size: clamp(30px, 4vw, 48px); font-weight: 900; letter-spacing: -0.02em; margin-bottom: 20px; }
 .course-intro .ci-tag { font-size: 14px; color: var(--red); font-weight: 600; margin-bottom: 16px; }
-.course-intro p { font-size: 15px; color: var(--ink-soft); line-height: 1.8; margin-bottom: 14px; }
+.course-intro p { font-size: 15px; color: var(--ink-soft); line-height: 1.8; margin-bottom: 14px; text-indent: 2em; }
 .course-intro strong { color: var(--red); font-weight: 700; }
 .module-trio { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 .module-card {
@@ -762,7 +763,7 @@ mark { background: transparent; color: var(--red); font-weight: 900; }
 .kids-skills { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 18px; }
 .kids-skills span { font-size: 11px; padding: 5px 11px; background: var(--red-soft); color: var(--red); border-radius: 100px; }
 .kids-conclusion {
-  margin-top: 48px; padding: 40px;
+  margin-top: 48px; padding: 40px 0;
   background: #1a1a1a; color: #fff; border-radius: 4px; text-align: center;
 }
 .kids-conclusion strong { font-size: 22px; font-weight: 800; color: var(--red-bright); }
@@ -772,7 +773,8 @@ mark { background: transparent; color: var(--red); font-weight: 900; }
 .about-statement {
   font-size: clamp(22px, 3vw, 36px);
   font-weight: 700; line-height: 1.4; letter-spacing: -0.01em;
-  max-width: 900px; margin-bottom: 64px;
+  max-width: 100%; margin-bottom: 64px;
+  text-indent: 2em;
 }
 .about-statement .red { color: var(--red); }
 .vision-img-box {
@@ -837,8 +839,9 @@ mark { background: transparent; color: var(--red); font-weight: 900; }
   color: var(--ink-soft);
   line-height: 1.7;
   margin: 0;
-  max-width: 900px;
+  max-width: 100%;
   font-weight: 600;
+  text-indent: 2em;
 }
 @media (max-width: 900px) {
   .ip-stack { grid-template-columns: 1fr; }
@@ -969,10 +972,10 @@ mark { background: transparent; color: var(--red); font-weight: 900; }
 
 /* 关于我们：解说文字 */
 .about-lead { font-size: clamp(18px, 2.4vw, 26px); font-weight: 700; line-height: 1.5; letter-spacing: -0.01em; max-width: 900px; margin-bottom: 48px; color: var(--ink); }
-.about-note { font-size: 15px; color: var(--ink-soft); line-height: 1.85; max-width: 900px; margin: 28px 0 56px; }
+.about-note { font-size: 15px; color: var(--ink-soft); line-height: 1.85; max-width: 100%; margin: 28px 0 56px; text-indent: 2em; }
 
 /* AI 少年成长营：why now */
-.camp-lead { font-size: clamp(16px, 2vw, 20px); font-weight: 600; line-height: 1.7; color: var(--ink); max-width: 840px; margin-bottom: 56px; }
+.camp-lead { font-size: clamp(16px, 2vw, 20px); font-weight: 600; line-height: 1.7; color: var(--ink); max-width: 100%; margin-bottom: 56px; text-indent: 2em; }
 
 /* ===== Reveal animation ===== */
 .reveal { opacity: 0; transform: translateY(40px); transition: opacity .8s var(--ease), transform .8s var(--ease); }
