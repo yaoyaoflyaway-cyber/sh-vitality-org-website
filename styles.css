@@ -1839,6 +1839,55 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
   .talent-claw-embed .workbuddy-icon .icon-fill { fill:#f4f8ff }
   .talent-claw-embed .workbuddy-icon .icon-accent { fill:var(--yellow);stroke:var(--blue) }
   .talent-claw-embed .workbuddy-icon .icon-accent-stroke { fill:var(--yellow);stroke:var(--blue);stroke-width:2.5 }
+
+/* TalentClaw 黑底可读性覆盖 */
+.talent-claw-embed { --blue:#28B894;--blue-dark:#1c8f6f;--blue-pale:#142821;--ink:#f0f0f0;--muted:#a3a3a3;--line:rgba(255,255,255,0.16);--panel:#161616 }
+.talent-claw-embed .page { background:#0a0a0a; border:1px solid var(--line); box-shadow:none; }
+.talent-claw-embed .notice { border-color:var(--line); color:var(--green-text); background:#142821; }
+.talent-claw-embed .notice b { background:var(--green-text); color:#0a0a0a; }
+.talent-claw-embed .stage { border-color:var(--line); background:var(--panel); }
+.talent-claw-embed .stage.is-core { border-color:var(--green-text); }
+.talent-claw-embed .stage-no { color:var(--green-text); }
+.talent-claw-embed .stage-no b { background:var(--green-text); color:#0a0a0a; }
+.talent-claw-embed .stage h2 { color:#fff; }
+.talent-claw-embed .stage h2 span { color:#d4d4d4; }
+.talent-claw-embed .stage-kicker { color:var(--muted); border-bottom-color:var(--line); word-break:break-word; font-size:12px; }
+.talent-claw-embed .list li { color:#d4d4d4; word-break:break-word; }
+.talent-claw-embed .list li::before { background:var(--green-text); }
+.talent-claw-embed .tag { border-color:var(--line); background:#1a1a1a; color:var(--green-text); }
+.talent-claw-embed .resource { border-color:var(--line); background:#1a1a1a; color:#d4d4d4; word-break:break-word; }
+.talent-claw-embed .resource strong { color:#fff; }
+.talent-claw-embed .resource::before { color:var(--green-text); }
+.talent-claw-embed .feedback { border-color:var(--line); background:#161616; }
+.talent-claw-embed .feedback::before, .talent-claw-embed .feedback::after { color:var(--green-text); }
+.talent-claw-embed .feedback h2 { color:#fff; }
+.talent-claw-embed .feedback-grid span { color:#d4d4d4; }
+.talent-claw-embed .feedback-grid span::before { color:var(--green-text); }
+.talent-claw-embed .legend { color:var(--muted); }
+.talent-claw-embed .legend span::before { background:var(--green-text); }
+.talent-claw-embed .legend span:nth-child(2)::before { background:var(--yellow); }
+.talent-claw-embed .legend span:nth-child(3)::before { background:var(--green); }
+.talent-claw-embed .editable { border-top-color:var(--line); color:var(--muted); }
+.talent-claw-embed .editable strong { color:var(--green-text); }
+.talent-claw-embed .visual .robot { border-color:var(--green-text); background:#1a1a1a; box-shadow:0 7px 0 rgba(40,184,148,0.12); }
+.talent-claw-embed .robot::before, .talent-claw-embed .robot::after { background:var(--green-text); }
+.talent-claw-embed .robot .antenna, .talent-claw-embed .robot .antenna::after { background:var(--green-text); }
+.talent-claw-embed .doc { border-color:var(--green-text); background:#1a1a1a; box-shadow:7px 7px 0 rgba(40,184,148,0.12); }
+.talent-claw-embed .doc::before, .talent-claw-embed .doc::after { background:var(--green-text); }
+.talent-claw-embed .brain { border-color:var(--green-text); box-shadow:7px 7px 0 rgba(40,184,148,0.12); }
+.talent-claw-embed .brain::before, .talent-claw-embed .brain::after { border-color:var(--green-text); }
+.talent-claw-embed .result { border-color:var(--green-text); background:#1a1a1a; box-shadow:7px 7px 0 rgba(40,184,148,0.12); }
+.talent-claw-embed .result::before { color:var(--green-text); }
+.talent-claw-embed .puzzle { border-color:var(--green-text); background:#1a1a1a; box-shadow:7px 7px 0 rgba(40,184,148,0.12); }
+.talent-claw-embed .puzzle::before { border-color:var(--green-text); background:var(--green-text); }
+.talent-claw-embed .terminal { box-shadow:inset 0 0 0 3px rgba(255,255,255,0.25),7px 7px 0 rgba(40,184,148,0.12); }
+.talent-claw-embed .workbuddy-icon .icon-fill { fill:#1a2a24; }
+.talent-claw-embed .workbuddy-icon .icon-accent { fill:var(--yellow); stroke:var(--green-text); }
+.talent-claw-embed .workbuddy-icon .icon-accent-stroke { fill:var(--yellow); stroke:var(--green-text); }
+@media (max-width:620px) {
+  .talent-claw-embed .page { border:0; }
+}
+
 /* ===== 新规划站点补充样式（v2 七段式） ===== */
 /* ③ 三大产品线概览：复用 solution-pillar，改三列 */
 .product-lines { grid-template-columns: repeat(3, 1fr); }
