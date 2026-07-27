@@ -1860,6 +1860,7 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
 .talent-claw-embed .resource::before { color:var(--green-text); }
 .talent-claw-embed .feedback { border-color:var(--line); background:#161616; }
 .talent-claw-embed .feedback::before, .talent-claw-embed .feedback::after { color:var(--green-text); }
+.talent-claw-embed .feedback::before { background:#0a0a0a; }
 .talent-claw-embed .feedback h2 { color:#fff; }
 .talent-claw-embed .feedback-grid span { color:#d4d4d4; }
 .talent-claw-embed .feedback-grid span::before { color:var(--green-text); }
