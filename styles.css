@@ -731,9 +731,12 @@ mark { background: transparent; color: var(--red); font-weight: 900; }
   max-width: 100%;
   margin-bottom: 40px;
 }
-.course-imgs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.course-imgs { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 .course-img-box { border: 1px solid var(--line); border-radius: 4px; overflow: hidden; }
 .course-img-box img { width: 100%; aspect-ratio: 3/2; object-fit: cover; display: block; }
+.camp-imgs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.camp-img-box { border: 1px solid var(--line); border-radius: 4px; overflow: hidden; }
+.camp-img-box img { width: 100%; aspect-ratio: 3/2; object-fit: cover; display: block; }
 .course-intro h3 { font-size: clamp(30px, 4vw, 48px); font-weight: 900; letter-spacing: -0.02em; margin-bottom: 20px; }
 .course-intro .ci-tag { font-size: 14px; color: var(--red); font-weight: 600; margin-bottom: 16px; }
 .course-intro p { font-size: var(--text-base); color: var(--ink-soft); line-height: 1.8; margin-bottom: 14px; text-indent: 2em; }
@@ -1526,6 +1529,7 @@ mark { background: transparent; color: var(--red); font-weight: 900; }
   .is-cards { grid-template-columns: 1fr; }
   .course-intro { margin-bottom: 28px; }
   .course-imgs { grid-template-columns: 1fr; gap: 12px; }
+  .camp-imgs { grid-template-columns: 1fr; gap: 12px; }
   .is-card { margin-left: 0; margin-top: -1px; min-height: auto; padding: 28px 22px; }
   .is-card:first-child { border-radius: 6px 6px 0 0; margin-top: 0; }
   .is-card:nth-child(2),
