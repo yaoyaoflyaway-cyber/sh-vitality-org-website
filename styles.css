@@ -1109,7 +1109,7 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
   grid-template-columns: 1fr auto;
   align-items: center;
   gap: 28px;
-  margin-top: 12px;
+  margin-top: 20px;
   border: 1px solid var(--line);
   border-radius: 4px;
   padding: 28px 30px;
