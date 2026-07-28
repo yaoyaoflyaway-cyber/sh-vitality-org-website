@@ -919,30 +919,35 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
 .connect-card {
   display: grid;
   grid-template-columns: auto 1fr;
-  gap: 48px;
+  gap: 56px;
   align-items: center;
   border: 1px solid var(--line);
   border-radius: 4px;
   padding: 48px;
   background: #0a0a0a;
 }
+.connect-qrs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
 .connect-qr { text-align: center; }
 .connect-qr img {
-  width: 180px; height: 180px; border-radius: 8px;
-  display: block; margin-bottom: 12px;
+  width: 150px; height: 150px; border-radius: 8px;
+  display: block; margin-bottom: 10px;
   background: #fff;
 }
 .connect-qr span { font-size: var(--text-sm); color: var(--ink-soft); }
-.connect-info { display: grid; gap: 28px; }
+.connect-info { display: grid; gap: 24px; }
 .connect-row { display: grid; gap: 6px; }
 .connect-row strong { font-size: var(--text-sm); color: var(--green-text); font-weight: 700; }
 .connect-row span,
 .connect-row a { font-size: var(--text-lg); color: var(--ink); font-weight: 600; text-decoration: none; }
 .connect-row a:hover { color: var(--green-text); }
 
-@media (max-width: 760px) {
-  .connect-card { grid-template-columns: 1fr; padding: 32px 24px; }
-  .connect-qr img { margin: 0 auto 12px; }
+@media (max-width: 900px) {
+  .connect-card { grid-template-columns: 1fr; gap: 40px; padding: 36px 28px; }
+  .connect-qrs { justify-content: center; max-width: 360px; margin: 0 auto; }
 }
 
 /* ===== Footer ===== */
