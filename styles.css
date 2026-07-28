@@ -550,7 +550,7 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
 .case-scroller { position: relative; }
 .case-arrow {
   position: absolute;
-  top: 43%;
+  top: 46%;
   transform: translateY(-50%);
   width: 44px;
   height: 44px;
@@ -590,8 +590,8 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
 .case-item img {
   width: 100%;
   display: block;
-  border-radius: 16px;
-  border: 1px solid var(--line);
+  border-radius: 46px;
+  border: 1px solid rgba(255,255,255,0.08);
   background: #000;
   box-shadow: 0 12px 30px rgba(0,0,0,0.45);
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
