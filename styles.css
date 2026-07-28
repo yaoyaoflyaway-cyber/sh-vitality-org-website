@@ -634,7 +634,7 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
 .phone-screen {
   position: relative;
   width: 100%;
-  aspect-ratio: 9 / 16;
+  aspect-ratio: 9 / 18;
   border-radius: 32px;
   overflow: hidden;
   background: #000;
