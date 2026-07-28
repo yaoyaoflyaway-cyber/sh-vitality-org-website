@@ -939,6 +939,15 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
 }
 .connect-qr span { font-size: var(--text-sm); color: var(--ink-soft); }
 .connect-info { display: grid; gap: 24px; }
+.connect-slogan {
+  font-size: var(--text-lg);
+  color: var(--green-text);
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 4px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--line);
+}
 .connect-row { display: grid; gap: 6px; }
 .connect-row strong { font-size: var(--text-sm); color: var(--green-text); font-weight: 700; }
 .connect-row span,
