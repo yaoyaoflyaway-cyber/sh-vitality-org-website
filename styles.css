@@ -544,12 +544,9 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
   scroll-snap-type: x mandatory;
   padding-bottom: 14px;
   -webkit-overflow-scrolling: touch;
-  scrollbar-width: thin;
-  scrollbar-color: var(--green-text) rgba(255,255,255,0.08);
+  scrollbar-width: none;
 }
-.case-grid::-webkit-scrollbar { height: 6px; }
-.case-grid::-webkit-scrollbar-thumb { background: var(--green-text); border-radius: 3px; }
-.case-grid::-webkit-scrollbar-track { background: rgba(255,255,255,0.08); border-radius: 3px; }
+.case-grid::-webkit-scrollbar { display: none; }
 .case-item {
   margin: 0;
   flex: 0 0 auto;
