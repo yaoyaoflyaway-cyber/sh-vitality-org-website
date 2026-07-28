@@ -591,7 +591,7 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
   position: relative;
   width: 100%;
   aspect-ratio: 9 / 16;
-  border-radius: 26px;
+  border-radius: 28px;
   overflow: hidden;
   background: #000;
   box-shadow: 0 18px 46px rgba(0,0,0,0.55);
@@ -607,97 +607,6 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
   transform: translateY(-6px);
   box-shadow: 0 24px 55px rgba(40,184,148,0.22);
 }
-.screen-ui {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  z-index: 2;
-  color: #fff;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Microsoft YaHei", sans-serif;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.4);
-}
-.ui-statusbar {
-  position: absolute;
-  top: 0; left: 0; right: 0;
-  height: 56px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 14px 0 10px;
-  font-size: 13px;
-  font-weight: 600;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.72), rgba(0,0,0,0.25));
-}
-.ui-back { font-size: 26px; line-height: 1; opacity: 0.95; }
-.ui-time { position: absolute; left: 50%; transform: translateX(-50%); }
-.ui-signal { font-size: 11px; letter-spacing: 1px; opacity: 0.95; }
-.ui-sidebar {
-  position: absolute;
-  right: 0;
-  bottom: 130px;
-  width: 58px;
-  padding: 12px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  background: linear-gradient(to left, rgba(0,0,0,0.78), rgba(0,0,0,0.38));
-  border-radius: 24px 0 0 24px;
-}
-.ui-avatar {
-  width: 34px; height: 34px;
-  border-radius: 50%;
-  background: rgba(255,255,255,0.18);
-  border: 1px solid rgba(255,255,255,0.35);
-  margin-bottom: 4px;
-}
-.ui-btn {
-  width: 32px; height: 32px;
-  display: flex; align-items: center; justify-content: center;
-  font-size: 20px;
-  opacity: 0.95;
-}
-.ui-bottom {
-  position: absolute;
-  bottom: 0; left: 0; right: 0;
-  padding: 58px 14px 10px;
-  background: linear-gradient(to top, rgba(0,0,0,0.92), rgba(0,0,0,0.45));
-}
-.ui-commentbar {
-  max-width: 68%;
-  background: rgba(255,255,255,0.10);
-  border-radius: 16px;
-  padding: 6px 12px;
-  font-size: 12px;
-  color: rgba(255,255,255,0.85);
-  margin-bottom: 10px;
-  backdrop-filter: blur(2px);
-}
-.ui-navbar {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  font-size: 10px;
-  color: rgba(255,255,255,0.9);
-  padding-top: 8px;
-}
-.ui-plus { font-size: 26px; line-height: 1; font-weight: 300; }
-/* 漫剧：用清晰字幕条盖住原图中间乱码字幕 */
-.case-item:nth-child(3) .screen-ui::after {
-  content: '高能反转 · 爆款短剧';
-  position: absolute;
-  left: 14px;
-  bottom: 132px;
-  color: rgba(255,255,255,0.96);
-  font-size: 13px;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.7);
-  background: linear-gradient(to right, rgba(0,0,0,0.45), rgba(0,0,0,0.1));
-  padding: 5px 12px;
-  border-radius: 6px;
-  pointer-events: none;
-}
 .case-item figcaption {
   text-align: center;
   margin-top: 12px;
@@ -705,7 +614,7 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
   color: var(--ink-soft);
   letter-spacing: 0.04em;
 }
-/* 占位手机壳（无图时） */
+/* 占位：等待样图 */
 .phone-screen--empty {
   display: flex;
   align-items: center;
@@ -724,16 +633,6 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
   color: var(--ink-soft);
   font-size: 14px;
   letter-spacing: 0.08em;
-}
-.phone-screen--template {
-  background: transparent;
-  filter: drop-shadow(0 0 22px rgba(255,255,255,0.18)) drop-shadow(0 8px 24px rgba(0,0,0,0.6));
-}
-.phone-screen--template img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  display: block;
 }
 @media (max-width: 600px) {
   .case-item { width: 165px; }
