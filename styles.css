@@ -933,7 +933,7 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
 }
 .connect-qr { text-align: center; }
 .connect-qr img {
-  width: 150px; height: 150px; border-radius: 8px;
+  width: 200px; height: 200px; border-radius: 8px;
   display: block; margin-bottom: 10px;
   background: #fff;
 }
