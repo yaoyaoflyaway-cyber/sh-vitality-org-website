@@ -574,7 +574,8 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
 .solution-pillar:hover .sp-link .arrow { transform: translateX(4px); }
 
 /* ===== 产品线通用 ===== */
-.product-block { padding: 120px 0; border-top: 1px solid var(--line); }
+.product-block { padding: 140px 0; border-top: 1px solid var(--line); }
+.solution-pillars { margin-bottom: 80px; }
 .product-head { margin-bottom: 56px; }
 .product-name {
   font-size: clamp(34px, 4.5vw, 56px);
@@ -726,7 +727,7 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
 /* 五大计划 · 品牌带（暂未配图） */
 
 /* ===== 大课 & 训练营（保留优化） ===== */
-.course-big { padding: 120px 0; border-top: 1px solid var(--line); }
+.course-big { padding: 140px 0; border-top: 1px solid var(--line); }
 .course-top { margin-bottom: 56px; }
 .course-intro {
   max-width: 100%;
@@ -803,13 +804,13 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
 /* 影响力起点：三张图横排 + 大字报文案 */
 .influence-posters {
   display: block;
-  margin: 16px 0 80px;
+  margin: 16px 0 0;
 }
 .ip-stack {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 18px;
-  margin-bottom: 48px;
+  margin-bottom: 80px;
 }
 .ip-card {
   margin: 0;
