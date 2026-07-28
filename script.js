@@ -67,3 +67,25 @@ document.querySelectorAll('.reveal, .reveal-stagger').forEach(el => io.observe(e
   });
 })();
 
+// 案例区左右滑动按钮
+(function () {
+  var scroller = document.querySelector('.case-scroller');
+  if (!scroller) return;
+  var grid = scroller.querySelector('.case-grid');
+  var prev = scroller.querySelector('.case-arrow--prev');
+  var next = scroller.querySelector('.case-arrow--next');
+  if (!grid || !prev || !next) return;
+  var step = function () { return Math.max(248, Math.round(grid.clientWidth * 0.8)); };
+  var update = function () {
+    var max = grid.scrollWidth - grid.clientWidth;
+    prev.disabled = grid.scrollLeft <= 1;
+    next.disabled = grid.scrollLeft >= max - 1;
+    scroller.classList.toggle('is-static', max <= 1);
+  };
+  prev.addEventListener('click', function () { grid.scrollBy({ left: -step(), behavior: 'smooth' }); });
+  next.addEventListener('click', function () { grid.scrollBy({ left: step(), behavior: 'smooth' }); });
+  grid.addEventListener('scroll', update, { passive: true });
+  window.addEventListener('resize', update);
+  update();
+})();
+
