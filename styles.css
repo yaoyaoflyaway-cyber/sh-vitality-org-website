@@ -688,21 +688,57 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
 .dy-searchbar .dy-search-icon { font-size: 12px; opacity: 0.8; }
 .dy-searchbar .dy-search-text { flex: 1; }
 .dy-searchbar .dy-search-btn { font-weight: 600; }
-/* 右侧数据：纯 CSS 文字，对齐底图图标 */
-.dy-count {
+/* 右侧互动列：纯 CSS 绘制（头像/爱心/评论/收藏/转发/唱片 + 数字），与底图图标解耦 */
+.dy-actions {
   position: absolute;
-  right: 6px;
-  width: 58px;
-  text-align: center;
-  font-size: 10px;
-  font-weight: 700;
-  color: #fff;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.55);
+  right: 8px;
+  top: 24%;
+  bottom: 13%;
+  width: 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
-.dy-count--likes { top: 47%; }
-.dy-count--comments { top: 57%; }
-.dy-count--collects { top: 67%; }
-.dy-count--shares { top: 77%; }
+.dy-ava {
+  position: relative;
+  width: 42px; height: 42px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ffd36e, #ff8a5b);
+  border: 2px solid #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.4);
+}
+.dy-ava-plus {
+  position: absolute;
+  bottom: -7px; left: 50%; transform: translateX(-50%);
+  width: 18px; height: 18px; border-radius: 50%;
+  background: #fe2c55; color: #fff;
+  font-size: 13px; line-height: 17px; text-align: center; font-weight: 700;
+}
+.dy-act {
+  display: flex; flex-direction: column; align-items: center; gap: 3px;
+  background: none; border: none; padding: 0; margin: 0;
+}
+.dy-ic {
+  width: 30px; height: 30px;
+  display: flex; align-items: center; justify-content: center;
+}
+.dy-ic svg { width: 28px; height: 28px; fill: #fff; filter: drop-shadow(0 1px 2px rgba(0,0,0,0.45)); }
+.dy-num {
+  font-size: 10px; font-weight: 700; color: #fff;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.55);
+  line-height: 1.1;
+}
+.dy-disc {
+  width: 38px; height: 38px; border-radius: 50%;
+  background: #111; border: 3px solid #fff;
+  position: relative; box-shadow: 0 1px 4px rgba(0,0,0,0.4);
+}
+.dy-disc::after {
+  content: ""; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+  width: 12px; height: 12px; border-radius: 50%;
+  background: linear-gradient(135deg, #ffd36e, #ff8a5b);
+}
 /* 底部文案 */
 .dy-caption {
   position: absolute;
