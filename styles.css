@@ -645,6 +645,20 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
   object-fit: cover;
   display: block;
 }
+.case-entity {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.55);
+  z-index: 2;
+  pointer-events: none;
+}
 .case-item figcaption {
   text-align: center;
   margin-top: 12px;
