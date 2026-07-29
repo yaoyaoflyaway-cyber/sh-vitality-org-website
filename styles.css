@@ -652,9 +652,9 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
   right: 0;
   padding: 0 8px;
   text-align: center;
-  font-family: "ZCOOL QingKe HuangYou", "Noto Sans SC", sans-serif;
-  font-size: 30px;
-  font-weight: 400;
+  font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+  font-size: 27px;
+  font-weight: 900;
   line-height: 1.15;
   letter-spacing: 0.02em;
   white-space: nowrap;
