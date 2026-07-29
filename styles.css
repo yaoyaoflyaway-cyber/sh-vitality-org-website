@@ -735,6 +735,19 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
   color: rgba(255,255,255,0.72);
 }
 .dy-commentbar .dy-cicons { display: flex; gap: 10px; }
+.dy-progress {
+  position: absolute;
+  left: 0; right: 0; bottom: 3px;
+  height: 2px;
+  background: rgba(255,255,255,0.25);
+  z-index: 3;
+}
+.dy-progress span {
+  display: block;
+  height: 100%;
+  background: #fe2c55;
+  border-radius: 0 2px 2px 0;
+}
 /* 底部导航栏覆盖层：盖住 AI 水印和乱码 */
 .ui-bottombar {
   position: absolute;
