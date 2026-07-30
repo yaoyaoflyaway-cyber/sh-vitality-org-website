@@ -4,7 +4,7 @@
   --ink-soft: #b3b3b3;
   --ink-faint: #808080;
   --paper: #0a0a0a;
-  --paper-warm: #161616;
+  --paper-warm: #0a0a0a;
   --line: rgba(255,255,255,0.14);
   --line-soft: rgba(255,255,255,0.08);
   --red: #c92818;
@@ -402,7 +402,7 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
 
 /* ===== 影响力时代 ===== */
 .influence {
-  background: #0f0f0f;
+  background: #0a0a0a;
   color: #fff;
 }
 .influence .en-label { color: var(--green-text); }
@@ -1222,7 +1222,7 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
 
 /* 联系我们：收尾宣言 */
 .closing-manifesto {
-  background: #0f0f0f;
+  background: #0a0a0a;
   color: #fff;
   padding: 72px 56px;
   border-radius: 4px;
@@ -1311,7 +1311,7 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
   flex-direction: column;
   border-radius: 16px;
   padding: 32px;
-  background: #161616;
+  background: #0a0a0a;
   border: 1px solid rgba(255,255,255,0.10);
   box-shadow: 0 20px 60px rgba(0,0,0,0.35);
   transition: transform .35s var(--ease), box-shadow .35s var(--ease);
