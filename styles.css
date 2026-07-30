@@ -1129,11 +1129,11 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
 .jobs-block .en-label { margin-bottom: 16px; }
 .jobs-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
 .job-card {
-  padding: 24px;
+  padding: 18px;
   border: 1px solid var(--line); border-radius: 4px;
   background: var(--paper);
   transition: all .4s var(--ease);
-  display: flex; flex-direction: column; gap: 8px;
+  display: flex; flex-direction: column; gap: 6px;
 }
 .job-card:hover { border-color: var(--green-text); transform: translateY(-3px); box-shadow: var(--shadow-md); }
 .job-card .job-title { font-size: 17px; font-weight: 700; }
