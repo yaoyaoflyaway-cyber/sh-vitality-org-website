@@ -116,6 +116,9 @@ ul { list-style: none; }
 }
 .nav-logo:hover { color: #fff; }
 .nav-menu { display: flex; gap: 4px; margin: 0 auto; }
+@media (min-width: 769px) {
+  .nav-menu { transform: translateX(60px); }
+}
 .nav-link {
   font-size: 14px;
   font-weight: 500;
