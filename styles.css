@@ -2163,17 +2163,17 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
 /* TalentClaw 双栏布局：左侧缩小的七段管线 + 右侧总结文字 */
 .talent-layout {
   display: flex;
-  gap: 36px;
+  gap: 30px;
   align-items: flex-start;
   margin-top: 60px;
 }
 .talent-layout .talent-claw-embed {
-  flex: 0 0 58%;
-  max-width: 58%;
+  flex: 0 0 62%;
+  max-width: 62%;
   min-width: 0;
 }
 .talent-layout .talent-summary {
-  flex: 1 1 38%;
+  flex: 1 1 34%;
   min-width: 0;
   color: #d4d4d4;
   font-size: 16px;
@@ -2211,99 +2211,99 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
   min-width: 0;
 }
 .talent-layout .talent-claw-embed .stage-wrap:not(:last-child)::after {
-  flex: 0 0 22px;
-  font-size: 18px;
+  flex: 0 0 16px;
+  font-size: 14px;
 }
 .talent-layout .talent-claw-embed .stage {
-  padding: 10px 8px;
-  min-height: 320px;
-  border-radius: 10px;
+  padding: 7px 6px;
+  min-height: 200px;
+  border-radius: 9px;
 }
 .talent-layout .talent-claw-embed .notice {
-  font-size: 13px;
-  padding: 10px 14px;
-  margin-bottom: 12px;
+  font-size: 11px;
+  padding: 7px 12px;
+  margin-bottom: 9px;
 }
 .talent-layout .talent-claw-embed .stage-no {
-  font-size: 12px;
-  gap: 4px;
+  font-size: 11px;
+  gap: 3px;
 }
 .talent-layout .talent-claw-embed .stage-no b {
-  width: 18px;
-  height: 18px;
-  font-size: 10px;
+  width: 15px;
+  height: 15px;
+  font-size: 9px;
 }
 .talent-layout .talent-claw-embed .stage h2 {
-  font-size: 14px;
-  margin: 8px 0 10px;
+  font-size: 12px;
+  margin: 5px 0 6px;
 }
 .talent-layout .talent-claw-embed .stage-kicker {
-  font-size: 9px;
-  padding-bottom: 5px;
+  font-size: 8px;
+  padding-bottom: 3px;
 }
 .talent-layout .talent-claw-embed .visual {
-  height: 56px;
-  margin: 6px 0 4px;
+  height: 34px;
+  margin: 3px 0 2px;
 }
 .talent-layout .talent-claw-embed .workbuddy-icon {
-  width: 58px;
-  height: 48px;
+  width: 42px;
+  height: 34px;
 }
 .talent-layout .talent-claw-embed .list li {
-  font-size: 10.5px;
-  line-height: 1.45;
-  margin: 2px 0;
-  padding-left: 9px;
+  font-size: 8.5px;
+  line-height: 1.28;
+  margin: 1px 0;
+  padding-left: 7px;
 }
 .talent-layout .talent-claw-embed .list li::before {
-  width: 4px;
-  height: 4px;
-  top: 0.55em;
+  width: 3px;
+  height: 3px;
+  top: 0.5em;
 }
 .talent-layout .talent-claw-embed .resource {
-  padding: 4px;
-  margin: 3px 0;
-  font-size: 9.5px;
-  border-radius: 5px;
+  padding: 3px;
+  margin: 2px 0;
+  font-size: 8px;
+  border-radius: 4px;
 }
 .talent-layout .talent-claw-embed .resource strong {
-  font-size: 10.5px;
-  margin-bottom: 2px;
+  font-size: 8.5px;
+  margin-bottom: 1px;
 }
 .talent-layout .talent-claw-embed .resource::before {
-  margin-right: 3px;
+  margin-right: 2px;
 }
 .talent-layout .talent-claw-embed .feedback {
-  margin-top: 14px;
-  padding: 10px 12px;
-  gap: 14px;
+  margin-top: 9px;
+  padding: 7px 10px;
+  gap: 10px;
 }
 .talent-layout .talent-claw-embed .feedback-head {
-  gap: 8px;
+  gap: 6px;
 }
 .talent-layout .talent-claw-embed .feedback-head .database {
-  width: 28px;
-  height: 20px;
+  width: 22px;
+  height: 16px;
 }
 .talent-layout .talent-claw-embed .feedback h2 {
-  font-size: 12px;
+  font-size: 10px;
 }
 .talent-layout .talent-claw-embed .feedback-grid {
-  gap: 5px;
+  gap: 4px;
 }
 .talent-layout .talent-claw-embed .feedback-grid span {
-  font-size: 10px;
+  font-size: 8.5px;
   white-space: nowrap;
 }
 .talent-layout .talent-claw-embed .feedback-grid span::before {
   margin-right: 2px;
-  font-size: 14px;
+  font-size: 12px;
 }
 .talent-layout .talent-claw-embed .feedback::before {
-  top: -24px;
-  width: 20px;
-  height: 20px;
-  font-size: 20px;
+  top: -20px;
+  width: 16px;
+  height: 16px;
+  font-size: 16px;
 }
 
 @media (max-width: 980px) {
