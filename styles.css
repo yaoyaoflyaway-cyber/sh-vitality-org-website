@@ -2160,6 +2160,165 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
   .talent-claw-embed .page { border:0; }
 }
 
+/* TalentClaw 双栏布局：左侧缩小的七段管线 + 右侧总结文字 */
+.talent-layout {
+  display: flex;
+  gap: 36px;
+  align-items: flex-start;
+  margin-top: 60px;
+}
+.talent-layout .talent-claw-embed {
+  flex: 0 0 58%;
+  max-width: 58%;
+  min-width: 0;
+}
+.talent-layout .talent-summary {
+  flex: 1 1 38%;
+  min-width: 0;
+  color: #d4d4d4;
+  font-size: 16px;
+  line-height: 1.85;
+}
+.talent-layout .talent-summary h3 {
+  color: #fff;
+  font-size: 26px;
+  font-weight: 800;
+  margin: 0 0 18px;
+  line-height: 1.3;
+}
+.talent-layout .talent-summary p {
+  margin: 0 0 14px;
+}
+.talent-layout .talent-summary strong {
+  color: var(--green-text);
+  font-weight: 700;
+}
+
+/* 在双栏内把管线改成自适应紧凑排布，保持七段比例但更易读 */
+.talent-layout .talent-claw-embed .page {
+  padding: 18px;
+}
+.talent-layout .talent-claw-embed .diagram-viewport {
+  height: auto !important;
+}
+.talent-layout .talent-claw-embed .pipeline {
+  width: 100%;
+  transform: none;
+  gap: 0;
+}
+.talent-layout .talent-claw-embed .stage-wrap {
+  flex: 1 1 0;
+  min-width: 0;
+}
+.talent-layout .talent-claw-embed .stage-wrap:not(:last-child)::after {
+  flex: 0 0 22px;
+  font-size: 18px;
+}
+.talent-layout .talent-claw-embed .stage {
+  padding: 10px 8px;
+  min-height: 320px;
+  border-radius: 10px;
+}
+.talent-layout .talent-claw-embed .notice {
+  font-size: 13px;
+  padding: 10px 14px;
+  margin-bottom: 12px;
+}
+.talent-layout .talent-claw-embed .stage-no {
+  font-size: 12px;
+  gap: 4px;
+}
+.talent-layout .talent-claw-embed .stage-no b {
+  width: 18px;
+  height: 18px;
+  font-size: 10px;
+}
+.talent-layout .talent-claw-embed .stage h2 {
+  font-size: 14px;
+  margin: 8px 0 10px;
+}
+.talent-layout .talent-claw-embed .stage-kicker {
+  font-size: 9px;
+  padding-bottom: 5px;
+}
+.talent-layout .talent-claw-embed .visual {
+  height: 56px;
+  margin: 6px 0 4px;
+}
+.talent-layout .talent-claw-embed .workbuddy-icon {
+  width: 58px;
+  height: 48px;
+}
+.talent-layout .talent-claw-embed .list li {
+  font-size: 10.5px;
+  line-height: 1.45;
+  margin: 2px 0;
+  padding-left: 9px;
+}
+.talent-layout .talent-claw-embed .list li::before {
+  width: 4px;
+  height: 4px;
+  top: 0.55em;
+}
+.talent-layout .talent-claw-embed .resource {
+  padding: 4px;
+  margin: 3px 0;
+  font-size: 9.5px;
+  border-radius: 5px;
+}
+.talent-layout .talent-claw-embed .resource strong {
+  font-size: 10.5px;
+  margin-bottom: 2px;
+}
+.talent-layout .talent-claw-embed .resource::before {
+  margin-right: 3px;
+}
+.talent-layout .talent-claw-embed .feedback {
+  margin-top: 14px;
+  padding: 10px 12px;
+  gap: 14px;
+}
+.talent-layout .talent-claw-embed .feedback-head {
+  gap: 8px;
+}
+.talent-layout .talent-claw-embed .feedback-head .database {
+  width: 28px;
+  height: 20px;
+}
+.talent-layout .talent-claw-embed .feedback h2 {
+  font-size: 12px;
+}
+.talent-layout .talent-claw-embed .feedback-grid {
+  gap: 5px;
+}
+.talent-layout .talent-claw-embed .feedback-grid span {
+  font-size: 10px;
+  white-space: nowrap;
+}
+.talent-layout .talent-claw-embed .feedback-grid span::before {
+  margin-right: 2px;
+  font-size: 14px;
+}
+.talent-layout .talent-claw-embed .feedback::before {
+  top: -24px;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+}
+
+@media (max-width: 980px) {
+  .talent-layout {
+    flex-direction: column;
+    gap: 32px;
+  }
+  .talent-layout .talent-claw-embed,
+  .talent-layout .talent-summary {
+    flex: 1 1 auto;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
 /* ===== 新规划站点补充样式（v2 七段式） ===== */
 /* ③ 三大产品线概览：复用 solution-pillar，改三列 */
 .product-lines { grid-template-columns: repeat(3, 1fr); }
