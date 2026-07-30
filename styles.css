@@ -2216,8 +2216,11 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
 }
 .talent-layout .talent-claw-embed .stage {
   padding: 7px 6px;
-  min-height: 200px;
+  min-height: 180px;
   border-radius: 9px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
 .talent-layout .talent-claw-embed .notice {
   font-size: 11px;
@@ -2225,33 +2228,43 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
   margin-bottom: 9px;
 }
 .talent-layout .talent-claw-embed .stage-no {
-  font-size: 11px;
+  font-size: 9.5px;
   gap: 3px;
+  min-height: 26px;
+  line-height: 1.25;
+  align-items: flex-start;
 }
 .talent-layout .talent-claw-embed .stage-no b {
-  width: 15px;
-  height: 15px;
-  font-size: 9px;
+  width: 14px;
+  height: 14px;
+  font-size: 8px;
+  flex-shrink: 0;
 }
 .talent-layout .talent-claw-embed .stage h2 {
   font-size: 12px;
-  margin: 5px 0 6px;
+  margin: 0 0 6px;
+  min-height: 28px;
+  line-height: 1.25;
+  text-align: left;
 }
 .talent-layout .talent-claw-embed .stage-kicker {
-  font-size: 8px;
-  padding-bottom: 3px;
+  display: none;
 }
 .talent-layout .talent-claw-embed .visual {
-  height: 34px;
-  margin: 3px 0 2px;
+  height: 32px;
+  min-height: 32px;
+  margin: 0 0 6px;
 }
 .talent-layout .talent-claw-embed .workbuddy-icon {
-  width: 42px;
-  height: 34px;
+  width: 40px;
+  height: 32px;
+}
+.talent-layout .talent-claw-embed .list {
+  margin: 0;
 }
 .talent-layout .talent-claw-embed .list li {
-  font-size: 8.5px;
-  line-height: 1.28;
+  font-size: 8px;
+  line-height: 1.25;
   margin: 1px 0;
   padding-left: 7px;
 }
