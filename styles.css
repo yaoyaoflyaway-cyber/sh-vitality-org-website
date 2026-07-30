@@ -539,7 +539,7 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
 }
 .case-grid {
   display: flex;
-  gap: 18px;
+  gap: 12px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   padding-bottom: 14px;
@@ -582,7 +582,7 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
 .case-item {
   margin: 0;
   flex: 0 0 auto;
-  width: 230px;
+  width: 166px;
   scroll-snap-align: start;
   display: flex;
   flex-direction: column;
@@ -591,53 +591,51 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
 .phone-frame {
   position: relative;
   width: 100%;
-  padding: 7px 7px 9px;
-  border-radius: 44px;
+  padding: 5px 5px 6px;
+  border-radius: 32px;
   background: #0d0d0f;
   box-shadow:
     inset 0 0 0 1px rgba(255,255,255,0.08),
-    0 18px 46px rgba(0,0,0,0.55);
+    0 13px 33px rgba(0,0,0,0.55);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  transform: scale(0.72);
-  transform-origin: top center;
 }
 .phone-frame::before {
   content: "";
   position: absolute;
-  top: 7px;
+  top: 5px;
   left: 50%;
   transform: translateX(-50%);
-  width: 78px;
-  height: 22px;
+  width: 56px;
+  height: 16px;
   background: #0d0d0f;
-  border-radius: 0 0 16px 16px;
+  border-radius: 0 0 12px 12px;
   z-index: 3;
   pointer-events: none;
 }
 .phone-frame::after {
   content: "";
   position: absolute;
-  bottom: 13px;
+  bottom: 9px;
   left: 50%;
   transform: translateX(-50%);
-  width: 90px;
-  height: 4px;
+  width: 65px;
+  height: 3px;
   background: rgba(255,255,255,0.35);
-  border-radius: 2px;
+  border-radius: 1.5px;
   z-index: 3;
   pointer-events: none;
 }
 .case-item:hover .phone-frame {
-  transform: scale(0.72) translateY(-6px);
+  transform: translateY(-6px);
   box-shadow:
     inset 0 0 0 1px rgba(255,255,255,0.12),
-    0 24px 55px rgba(40,184,148,0.22);
+    0 17px 40px rgba(40,184,148,0.22);
 }
 .phone-screen {
   position: relative;
   width: 100%;
   aspect-ratio: 9 / 19.5;
-  border-radius: 36px;
+  border-radius: 26px;
   overflow: hidden;
   background: #000;
 }
@@ -652,10 +650,10 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
   top: 6%;
   left: 0;
   right: 0;
-  padding: 0 8px;
+  padding: 0 6px;
   text-align: center;
   font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
-  font-size: 27px;
+  font-size: 19px;
   font-weight: 900;
   line-height: 1.15;
   letter-spacing: 0.02em;
@@ -665,17 +663,17 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
   background-clip: text;
   color: transparent;
   -webkit-text-fill-color: transparent;
-  filter: drop-shadow(0 0 7px rgba(245,158,11,0.75)) drop-shadow(0 3px 6px rgba(0,0,0,0.7));
+  filter: drop-shadow(0 0 5px rgba(245,158,11,0.75)) drop-shadow(0 2px 4px rgba(0,0,0,0.7));
   z-index: 2;
   pointer-events: none;
 }
 .case-title::after {
   content: "";
   display: block;
-  width: 56px;
-  height: 3px;
-  margin: 7px auto 0;
-  border-radius: 2px;
+  width: 40px;
+  height: 2px;
+  margin: 5px auto 0;
+  border-radius: 1.5px;
   background: linear-gradient(90deg, transparent, #fcd34d 50%, transparent);
 }
 .case-subtitle {
@@ -683,10 +681,10 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
   bottom: 8%;
   left: 0;
   right: 0;
-  padding: 0 16px;
+  padding: 0 12px;
   text-align: center;
   color: #2dd4bf;
-  font-size: 13px;
+  font-size: 9px;
   font-weight: 600;
   letter-spacing: 0.06em;
   text-shadow: 0 1px 6px rgba(0,0,0,0.75);
@@ -695,8 +693,8 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
 }
 .case-item figcaption {
   text-align: center;
-  margin-top: 12px;
-  font-size: 14px;
+  margin-top: 9px;
+  font-size: 10px;
   color: var(--ink-soft);
   letter-spacing: 0.04em;
 }
@@ -721,7 +719,7 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
   letter-spacing: 0.08em;
 }
 @media (max-width: 600px) {
-  .case-item { width: 165px; }
+  .case-item { width: 120px; }
   .case-eyebrow { margin-bottom: 16px; }
 }
 .standard-story {
