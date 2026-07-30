@@ -1142,7 +1142,6 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
   grid-template-columns: auto 1fr;
   gap: 56px;
   align-items: center;
-  border: 1px solid var(--line);
   border-radius: 4px;
   padding: 48px;
   background: #0a0a0a;
@@ -1167,7 +1166,6 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
   line-height: 1.5;
   margin-bottom: 4px;
   padding-bottom: 16px;
-  border-bottom: 1px solid var(--line);
 }
 .connect-row { display: grid; gap: 6px; }
 .connect-row strong { font-size: var(--text-sm); color: var(--green-text); font-weight: 700; }
