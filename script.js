@@ -21,51 +21,7 @@ window.addEventListener('scroll', () => {
 navToggle.addEventListener('click', () => navMenu.classList.toggle('active'));
 document.querySelectorAll('.nav-link').forEach(l => l.addEventListener('click', () => navMenu.classList.remove('active')));
 
-// 平滑滚动（自定义 rAF，避免原生 scrollIntoView 跨长区块时的中途抖动；
-// 滚动期间预显示所有 reveal 元素，避免集中绘制造成单帧卡顿）
-const navEl = document.getElementById('navbar');
-function smoothScrollTo(target) {
-  const navH = navEl ? navEl.offsetHeight : 0;
-  const top = target.getBoundingClientRect().top + window.scrollY - navH - 8;
-  const maxY = document.documentElement.scrollHeight - window.innerHeight;
-  const endY = Math.max(0, Math.min(top, maxY));
-  const startY = window.scrollY;
-  const diff = endY - startY;
-  if (Math.abs(diff) < 2) return;
-  const duration = 720;
-  const startTime = performance.now();
-  function step(now) {
-    const t = Math.min(1, (now - startTime) / duration);
-    const eased = t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2; // easeInOutQuad
-    window.scrollTo(0, startY + diff * eased);
-    if (t < 1) requestAnimationFrame(step);
-  }
-  requestAnimationFrame(step);
-}
-
-document.querySelectorAll('a[href^="#"]').forEach(a => {
-  a.addEventListener('click', e => {
-    const href = a.getAttribute('href');
-    const t = href && href.length > 1 ? document.querySelector(href) : null;
-    if (!t) return;
-    e.preventDefault();
-    // 临时屏蔽 reveal 过渡，并预先把所有入场元素直接显形，滚动途中不再有任何 DOM 变化
-    document.documentElement.classList.add('no-anim');
-    document.querySelectorAll('.reveal, .reveal-stagger').forEach(el => el.classList.add('in'));
-    smoothScrollTo(t);
-    let endTimer;
-    const onScroll = () => {
-      clearTimeout(endTimer);
-      endTimer = setTimeout(finish, 200);
-    };
-    const finish = () => {
-      window.removeEventListener('scroll', onScroll);
-      document.documentElement.classList.remove('no-anim');
-    };
-    window.addEventListener('scroll', onScroll, { passive: true });
-    setTimeout(finish, 1600); // 兜底：防止 scrollEnd 未触发时一直挂着
-  });
-});
+// 锚点跳转交回浏览器原生行为（瞬间到位，不经过长区块动画，避免卡顿）
 
 // 滚动揭示动画
 const io = new IntersectionObserver((entries) => {
