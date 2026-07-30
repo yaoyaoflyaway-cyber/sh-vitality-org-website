@@ -223,7 +223,7 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
 .btn-ghost { background: transparent; color: var(--ink); border: 1.5px solid var(--ink); }
 .btn-ghost:hover { border-color: var(--red); color: var(--red); }
 /* ===== Section base ===== */
-.section { padding: 140px 0; }
+.section { padding: 80px 0; }
 .section-warm { background: var(--paper-warm); }
 .big-head {
   font-size: clamp(40px, 6vw, 76px);
@@ -406,7 +406,6 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
   color: #fff;
 }
 .influence .en-label { color: var(--green-text); }
-.influence .big-head { color: #fff; }
 .influence .section-sub { color: #b8b8b8; }
 .influence-system { margin: 72px 0 52px; }
 
@@ -777,7 +776,7 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
 .solution-pillar:hover .sp-link .arrow { transform: translateX(4px); }
 
 /* ===== 产品线通用 ===== */
-.product-block { padding: 140px 0; }
+.product-block { padding: 80px 0; }
 .solution-pillars { margin-bottom: 80px; }
 .product-head { margin-bottom: 56px; }
 .product-name {
@@ -930,7 +929,8 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
 /* 五大计划 · 品牌带（暂未配图） */
 
 /* ===== 大课 & 训练营（保留优化） ===== */
-.course-big { padding: 140px 0; }
+.course-big { padding: 80px 0; }
+#training { padding: 0; }
 .course-top { margin-bottom: 56px; }
 .course-intro {
   max-width: 100%;
