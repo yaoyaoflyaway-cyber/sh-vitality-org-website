@@ -1140,7 +1140,7 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
 .connect-card {
   display: grid;
   grid-template-columns: auto 1fr;
-  gap: 56px;
+  gap: 96px;
   align-items: center;
   border-radius: 4px;
   padding: 48px;
