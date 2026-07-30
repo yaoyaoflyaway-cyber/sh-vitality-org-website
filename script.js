@@ -24,8 +24,24 @@ document.querySelectorAll('.nav-link').forEach(l => l.addEventListener('click', 
 // 平滑滚动
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener('click', e => {
-    const t = document.querySelector(a.getAttribute('href'));
-    if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+    const href = a.getAttribute('href');
+    const t = href && href.length > 1 ? document.querySelector(href) : null;
+    if (!t) return;
+    e.preventDefault();
+    // 滚动期间关闭 reveal 过渡，避免穿过长区块时入场动画集中触发造成卡顿
+    document.documentElement.classList.add('no-anim');
+    t.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    let endTimer;
+    const onScroll = () => {
+      clearTimeout(endTimer);
+      endTimer = setTimeout(finish, 150);
+    };
+    const finish = () => {
+      window.removeEventListener('scroll', onScroll);
+      document.documentElement.classList.remove('no-anim');
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    setTimeout(finish, 1600); // 兜底：防止 scrollEnd 未触发时一直挂着
   });
 });
 

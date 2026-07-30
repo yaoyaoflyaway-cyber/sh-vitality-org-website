@@ -1267,6 +1267,10 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
 .reveal.in { opacity: 1; transform: translateY(0); }
 .reveal-stagger > * { opacity: 0; transform: translateY(30px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
 .reveal-stagger.in > * { opacity: 1; transform: translateY(0); }
+/* 程序化锚点滚动期间关闭过渡，避免经过长区块时入场动画集中爆发造成卡顿 */
+html.no-anim .reveal,
+html.no-anim .reveal-stagger,
+html.no-anim .reveal-stagger > * { transition: none !important; }
 .reveal-stagger.in > *:nth-child(2) { transition-delay: .08s; }
 .reveal-stagger.in > *:nth-child(3) { transition-delay: .16s; }
 .reveal-stagger.in > *:nth-child(4) { transition-delay: .24s; }
