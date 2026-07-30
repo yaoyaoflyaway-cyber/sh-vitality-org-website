@@ -1191,14 +1191,14 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
 /* ===== Footer ===== */
 .footer { background: #0a0a0a; color: #ededed; padding: 64px 0 32px; }
 .footer-inner { max-width: var(--max); margin: 0 auto; padding: 0 48px; }
-.footer-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px; padding-bottom: 32px; border-bottom: 1px solid rgba(255,255,255,0.12); }
-.footer-brand { display: flex; align-items: center; gap: 16px; }
+.footer-bar { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; }
+.footer-brand { display: flex; align-items: center; gap: 16px; grid-column: 1; }
 .footer-brand img { height: 36px; }
 .footer-brand p { font-size: 14px; color: #b0b0b0; }
 .footer-links { display: flex; gap: 28px; }
 .footer-links a { font-size: var(--text-xs); color: #b0b0b0; transition: color .3s; }
 .footer-links a:hover { color: var(--green-text); }
-.footer-bottom { font-size: var(--text-xs); color: #6a6a6a; text-align: center; }
+.footer-copy { grid-column: 2; font-size: var(--text-xs); color: #6a6a6a; text-align: center; white-space: nowrap; }
 
 /* 影响力：停止X，开始Y 分隔 */
 .influence-divider {
@@ -1795,7 +1795,8 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
   .scene-grid, .value-trio, .module-trio, .kids-grid, .empower-grid, .jobs-grid { grid-template-columns: 1fr; }
   .flow-step { min-width: 50%; border-bottom: 1px solid var(--line); }
   .formula-value span:not(.op) { font-size: 16px; padding: 10px 20px; }
-  .footer-top { flex-direction: column; gap: 24px; text-align: center; }
+  .footer-bar { grid-template-columns: 1fr; gap: 16px; text-align: center; justify-items: center; }
+  .footer-copy { grid-column: 1; white-space: normal; }
   .footer-links { flex-wrap: wrap; justify-content: center; }
   .closing-manifesto { padding: 44px 24px; }
   .cm-text { font-size: clamp(24px, 7vw, 36px); }
