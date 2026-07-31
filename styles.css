@@ -779,7 +779,7 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
 }
 .solution-pillar h3 { font-size: 30px; font-weight: 800; margin-bottom: 10px; letter-spacing: -0.02em; color: var(--ink); }
 .solution-pillar h3 .sp-subtitle { display: block; }
-.solution-pillar .product-slogan { font-size: 14px; font-weight: 700; color: var(--ink); line-height: 1.4; margin-bottom: 14px; }
+.solution-pillar .product-slogan { font-size: var(--text-base); font-weight: 700; color: var(--ink); line-height: 1.5; margin-bottom: 14px; }
 .solution-pillar p { font-size: var(--text-base); color: var(--ink-soft); line-height: 1.7; margin-bottom: 20px; }
 .solution-pillar .sp-link {
   font-size: 14px; font-weight: 600; color: var(--green-text);
