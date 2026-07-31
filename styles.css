@@ -420,7 +420,7 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
 }
 .influence .en-label { color: var(--green-text); }
 .influence .section-sub { color: #b8b8b8; }
-.influence-system { margin: 32px 0 52px; }
+.influence-system { margin: 32px 0 32px; }
 .highlight-story {
   max-width: 100%;
   margin: 12px 0 72px;
@@ -537,16 +537,7 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
   background: rgba(255,255,255,0.55);
 }
 
-.is-result {
-  margin-top: 44px;
-  font-size: clamp(20px, 2.6vw, 32px);
-  font-weight: 700;
-  line-height: 1.45;
-  color: #fff;
-  padding-top: 36px;
-}
-.is-result .red { color: var(--green-text); }
-.case-showcase { margin-top: 56px; }
+.case-showcase { margin-top: 32px; }
 .case-eyebrow {
   text-align: center;
   color: #fff;
@@ -1833,7 +1824,6 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
   .is-card:last-child { border-radius: 0; }
   .is-card:last-child { border-radius: 0 0 6px 6px; }
   .is-name { font-size: clamp(32px, 9vw, 44px); }
-  .is-result { margin-top: 36px; padding-top: 28px; }
   .hero-line3 { white-space: normal; }
   .hero-line2 { white-space: normal; }
   #standard .standard-layout .standard-story { max-width: 100%; }
