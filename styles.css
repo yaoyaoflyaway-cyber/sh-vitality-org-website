@@ -422,8 +422,8 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
 .influence .section-sub { color: #b8b8b8; }
 .influence-system { margin: 32px 0 52px; }
 .highlight-story {
-  max-width: 900px;
-  margin: 12px auto 32px;
+  max-width: 100%;
+  margin: 12px 0 32px;
 }
 .highlight-story p {
   font-size: clamp(17px, 2vw, 22px);
