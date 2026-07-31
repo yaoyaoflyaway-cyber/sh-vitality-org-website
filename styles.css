@@ -420,7 +420,20 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
 }
 .influence .en-label { color: var(--green-text); }
 .influence .section-sub { color: #b8b8b8; }
-.influence-system { margin: 72px 0 52px; }
+.influence-system { margin: 32px 0 52px; }
+.highlight-story {
+  max-width: 900px;
+  margin: 12px auto 32px;
+}
+.highlight-story p {
+  font-size: clamp(17px, 2vw, 22px);
+  line-height: 1.9;
+  color: #fff;
+  font-weight: 400;
+  text-indent: 2em;
+  letter-spacing: 0.01em;
+}
+.highlight-story .green-highlight { color: var(--green-text); font-weight: 700; }
 
 .is-head { margin-bottom: 44px; }
 .is-title {
