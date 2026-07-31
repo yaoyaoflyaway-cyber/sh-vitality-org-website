@@ -420,13 +420,7 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
 }
 .influence .en-label { color: var(--green-text); }
 .influence .section-sub { color: #b8b8b8; }
-.influence-system { margin: 40px 0 52px; }
-.highlight-paragraph {
-  font-size: clamp(17px, 1.4vw, 20px);
-  line-height: 1.95;
-  color: var(--ink-soft);
-  max-width: 1040px;
-}
+.influence-system { margin: 72px 0 52px; }
 
 .is-head { margin-bottom: 44px; }
 .is-title {
