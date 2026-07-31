@@ -1445,7 +1445,7 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
 }
 
 /* ===== FlowKing 智能体嵌入（流量王下方两行） ===== */
-.fk-blocks { margin-top: 56px; }
+.fk-blocks { margin-top: 20px; }
 
 .fk-row { display: grid; align-items: center; gap: 48px; }
 .fk-row ~ .fk-row { margin-top: 40px; }
