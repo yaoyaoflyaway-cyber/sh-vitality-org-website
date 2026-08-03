@@ -250,7 +250,7 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
   font-size: clamp(17px, 1.8vw, 20px);
   color: var(--ink-soft);
   max-width: 100%;
-  margin-bottom: 64px;
+  margin-bottom: 48px;
   line-height: 1.7;
   text-indent: 2em;
 }
