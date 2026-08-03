@@ -1061,7 +1061,7 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
 }
 .ip-goal p {
   font-size: clamp(17px, 1.6vw, 22px);
-  color: var(--ink-soft);
+  color: #fff;
   line-height: 1.7;
   margin: 0;
   max-width: 100%;
