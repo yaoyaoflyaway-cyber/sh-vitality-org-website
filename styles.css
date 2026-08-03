@@ -948,7 +948,7 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
 .plan-card p { font-size: var(--text-sm); line-height: 1.65; }
 .plan-card .plan-goal { font-size: var(--text-sm); font-weight: 700; color: var(--ink); margin-bottom: 10px; }
 .plan-card .plan-desc { color: var(--ink-soft); margin: 0; }
-.plan-card .plan-pain { font-size: 13px; font-weight: 600; color: var(--green-text); margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--line-soft); }
+.plan-card .plan-pain { font-size: 13px; font-weight: 600; color: var(--green-text); margin-top: auto; padding-top: 14px; border-top: 1px solid var(--line-soft); }
 
 /* 五大计划 · 品牌带（暂未配图） */
 
