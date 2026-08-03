@@ -1269,7 +1269,9 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
 .about-note { font-size: var(--text-base); color: var(--ink-soft); line-height: 1.85; max-width: 100%; margin: 28px 0 56px; text-indent: 2em; }
 
 /* AI 少年成长营：why now */
-.camp-lead { font-size: clamp(17px, 2vw, 21px); font-weight: 600; line-height: 1.7; color: var(--ink); max-width: 100%; margin-bottom: 56px; text-indent: 2em; }
+.camp-lead { margin-bottom: 56px; }
+.camp-lead p { font-size: var(--text-base); font-weight: 400; line-height: 1.8; color: #fff; max-width: 100%; margin-bottom: 14px; text-indent: 2em; }
+.camp-lead p:last-child { margin-bottom: 0; }
 
 /* ===== Reveal animation ===== */
 .reveal { opacity: 0; transform: translateY(40px); transition: opacity .8s var(--ease), transform .8s var(--ease); }
