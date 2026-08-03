@@ -966,7 +966,7 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
 .camp-img-box img { width: 100%; aspect-ratio: 3/2; object-fit: cover; display: block; }
 .course-intro h3 { font-size: clamp(30px, 4vw, 48px); font-weight: 900; letter-spacing: -0.02em; margin-bottom: 20px; }
 .course-intro .ci-tag { font-size: 14px; color: var(--green-text); font-weight: 600; margin-bottom: 16px; }
-.course-intro p { font-size: var(--text-base); color: var(--ink-soft); line-height: 1.8; margin-bottom: 14px; text-indent: 2em; }
+.course-intro p { font-size: var(--text-base); color: #fff; line-height: 1.8; margin-bottom: 14px; text-indent: 2em; }
 .course-intro strong { color: var(--green-text); font-weight: 700; }
 .module-trio { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 .module-card {
