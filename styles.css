@@ -1047,19 +1047,6 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
   height: auto;
 }
 .ip-copy { max-width: 1200px; }
-.ip-headline {
-  font-family: "PingFang SC", "Noto Sans SC", "Microsoft YaHei", sans-serif;
-  font-size: clamp(30px, 4.2vw, 56px);
-  font-weight: 800;
-  line-height: 1.15;
-  letter-spacing: -0.02em;
-  color: var(--green-text);
-  margin: 0 0 48px;
-}
-.ip-headline em {
-  font-style: normal;
-  color: var(--green-text);
-}
 .ip-goal { margin-bottom: 28px; }
 .ip-goal-label {
   display: inline-block;
@@ -1083,7 +1070,6 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
 }
 @media (max-width: 900px) {
   .ip-stack { grid-template-columns: 1fr; }
-  .ip-headline { font-size: clamp(26px, 7vw, 40px); }
   .ip-goal-label { font-size: 22px; }
 }
 .business-img-box {
