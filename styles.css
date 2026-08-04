@@ -2380,7 +2380,7 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
 .client-entry { display: block; padding: 36px 30px; border: 1px solid var(--line); border-radius: 6px; background: var(--paper); text-decoration: none; color: inherit; transition: all .4s var(--ease); }
 .client-entry:hover { border-color: var(--green-text); transform: translateY(-6px); box-shadow: var(--shadow-lg); }
 .client-entry .ce-title { display: flex; align-items: baseline; gap: 12px; white-space: nowrap; margin-bottom: 12px; }
-.client-entry .ce-num { font-size: 14px; font-weight: 800; color: var(--green-text); margin-bottom: 0; }
+.client-entry .ce-num { font-size: 22px; font-weight: 800; color: var(--green-text); margin-bottom: 0; }
 .client-entry h3 { font-size: 22px; font-weight: 800; margin-bottom: 0; color: var(--green-text); white-space: nowrap; }
 .client-entry p { font-size: var(--text-sm); color: var(--ink-soft); line-height: 1.7; margin-bottom: 18px; }
 .client-entry .ce-link { font-size: 14px; font-weight: 700; color: var(--ink); }
