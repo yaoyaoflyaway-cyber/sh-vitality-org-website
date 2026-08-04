@@ -1081,6 +1081,18 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
   line-height: 1.22;
   margin: 0 0 16px;
 }
+.ip-goal--blue {
+  background: rgba(45, 156, 219, 0.10);
+  border-color: rgba(93, 184, 255, 0.30);
+}
+.ip-goal--blue .ip-goal-label { color: #5db8ff; }
+
+.ip-goal--pink {
+  background: rgba(251, 113, 133, 0.12);
+  border-color: rgba(251, 113, 133, 0.35);
+}
+.ip-goal--pink .ip-goal-label { color: #fb7185; }
+
 .ip-goal p {
   font-size: var(--text-base);
   color: #fff;
