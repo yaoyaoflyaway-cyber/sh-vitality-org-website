@@ -1087,11 +1087,11 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
 }
 .ip-goal--blue .ip-goal-label { color: #5db8ff; }
 
-.ip-goal--pink {
-  background: rgba(251, 113, 133, 0.12);
-  border-color: rgba(251, 113, 133, 0.35);
+.ip-goal--yellow {
+  background: rgba(242, 201, 76, 0.10);
+  border-color: rgba(242, 201, 76, 0.30);
 }
-.ip-goal--pink .ip-goal-label { color: #fb7185; }
+.ip-goal--yellow .ip-goal-label { color: #f2c94c; }
 
 .ip-goal p {
   font-size: var(--text-base);
