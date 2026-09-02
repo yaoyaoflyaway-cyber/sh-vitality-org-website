@@ -2223,8 +2223,10 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
 .talent-layout .talent-claw-embed .page {
   padding: 18px;
 }
+@media (min-width: 621px) {
 .talent-layout .talent-claw-embed .diagram-viewport {
   height: auto !important;
+}
 }
 .talent-layout .talent-claw-embed .pipeline {
   width: 100%;
@@ -2363,13 +2365,13 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
 
 /* ④ 产品亮点 · 文案列表 */
 /* ⑥ 三类客户入口 */
-.client-entries { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-.client-entry { display: block; padding: 36px 30px; border: 1px solid var(--line); border-radius: 6px; background: var(--paper); text-decoration: none; color: inherit; transition: all .4s var(--ease); }
+.client-entries { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.client-entry { display: flex; flex-direction: column; padding: 28px 22px; border: 1px solid var(--line); border-radius: 6px; background: var(--paper); text-decoration: none; color: inherit; transition: all .4s var(--ease); }
 .client-entry:hover { border-color: var(--green-text); transform: translateY(-6px); box-shadow: var(--shadow-lg); }
 .client-entry .ce-title { display: flex; align-items: baseline; gap: 12px; white-space: nowrap; margin-bottom: 12px; }
 .client-entry .ce-num { font-size: 22px; font-weight: 800; color: var(--green-text); margin-bottom: 0; }
 .client-entry h3 { font-size: 22px; font-weight: 800; margin-bottom: 0; color: var(--green-text); white-space: nowrap; }
-.client-entry p { font-size: var(--text-sm); color: var(--ink-soft); line-height: 1.7; margin-bottom: 18px; }
+.client-entry p { font-size: var(--text-sm); color: var(--ink-soft); line-height: 1.7; margin-bottom: 18px; flex: 1 0 auto; }
 .client-entry .ce-link { font-size: 14px; font-weight: 700; color: var(--ink); }
 
 /* ⑤ 培训体系：course/camp 被包进 wrapper，去掉外层多余上边距 */
@@ -2380,4 +2382,297 @@ mark { background: transparent; color: var(--green-text); font-weight: 900; }
 }
 @media (max-width: 768px) {
   .client-entries, .product-lines { grid-template-columns: 1fr; }
+}
+
+/* === TalentClaw 七段管线：手机端整图等比缩小铺满屏宽、无横向滚动（缩小且保持完整，点按放大灯箱） === */
+@media (max-width: 620px) {
+  .talent-layout {
+    display: block !important;
+    gap: 0 !important;
+    width: 100vw !important;
+    margin-left: calc(50% - 50vw) !important;
+    margin-right: calc(50% - 50vw) !important;
+  }
+  .talent-layout .talent-claw-embed {
+    flex: none !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  .talent-claw-embed .page {
+    overflow: visible !important;
+    padding: 14px 0 !important;
+    box-shadow: none !important;
+    border: 0 !important;
+  }
+  .talent-claw-embed .diagram-viewport {
+    width: 100% !important;
+    overflow: hidden !important;
+    cursor: zoom-in;
+  }
+  /* 整图 1280px 横向渲染后由 fit() 等比缩小铺满屏宽（无横向滚动） */
+  .talent-claw-embed .pipeline,
+  .talent-layout .talent-claw-embed .pipeline {
+    width: 1280px !important;
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 0 !important;
+    padding: 0 !important;
+    overflow: visible !important;
+    transform: scale(var(--pipeline-scale, 1)) !important;
+    transform-origin: top left !important;
+  }
+  .talent-claw-embed .stage-wrap,
+  .talent-layout .talent-claw-embed .stage-wrap {
+    flex: 1 1 0 !important;
+    min-width: 0 !important;
+    display: flex !important;
+  }
+  .talent-claw-embed .stage-wrap:not(:last-child)::after,
+  .talent-layout .talent-claw-embed .stage-wrap:not(:last-child)::after {
+    display: grid !important;
+    flex: 0 0 44px !important;
+    position: static !important;
+    transform: none !important;
+  }
+  /* 用 3 类选择器恢复「整图」完整 stage 结构（图标112/视觉118/标题18）再等比缩小 */
+  .talent-layout .talent-claw-embed .stage {
+    height: 100% !important;
+    min-height: 380px !important;
+    padding: 18px 16px !important;
+    border-radius: 14px !important;
+  }
+  .talent-layout .talent-claw-embed .stage-no {
+    font-size: 14px !important;
+    min-height: 0 !important;
+    align-items: center !important;
+    gap: 8px !important;
+  }
+  .talent-layout .talent-claw-embed .stage h2 {
+    font-size: 18px !important;
+    margin: 12px 0 16px !important;
+    min-height: 0 !important;
+    text-align: center !important;
+  }
+  .talent-layout .talent-claw-embed .visual {
+    height: 118px !important;
+    min-height: 118px !important;
+    margin: 14px 0 4px !important;
+  }
+  .talent-layout .talent-claw-embed .workbuddy-icon {
+    width: 112px !important;
+    height: 94px !important;
+  }
+  .talent-layout .talent-claw-embed .list li {
+    font-size: 13px !important;
+  }
+  /* 缩小预览也保持完整：文字列表/资源/副标题均显示（虽小，点开灯箱看清晰） */
+  .talent-claw-embed .stage ul.list,
+  .talent-claw-embed .stage .resource,
+  .talent-claw-embed .stage .stage-kicker {
+    display: block !important;
+  }
+}
+
+/* === TalentClaw 管线图：点击放大灯箱（手机端） === */
+.diagram-lightbox {
+  position: fixed;
+  inset: 0;
+  background: #ffffff;
+  display: none;
+  z-index: 9999;
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.diagram-lightbox.open {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.diagram-lightbox .lb-stage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+}
+.diagram-lightbox .lb-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: 0 0;
+  will-change: transform;
+  pointer-events: none; /* 让舞台接收触摸，内容只渲染 */
+}
+.diagram-lightbox .lb-embed-wrap {
+  background: #ffffff;
+  color: #0f1f35;
+  padding: 0;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(15, 31, 53, 0.18);
+  width: max-content;
+  pointer-events: none;
+}
+.diagram-lightbox .lb-embed-wrap .talent-claw-embed {
+  margin: 0;
+  pointer-events: none;
+}
+/* 灯箱内恢复 .page 桌面端卡片样式（白底圆角阴影外框） */
+.diagram-lightbox .lb-embed-wrap .talent-claw-embed .page {
+  max-width: 1500px !important;
+  margin: 0 auto !important;
+  background: #fff !important;
+  border: 1px solid #d8e1f0 !important;
+  box-shadow: 0 8px 32px rgba(15, 31, 53, 0.18) !important;
+  padding: clamp(24px, 4vw, 58px) !important;
+  overflow: hidden !important;
+}
+/* 灯箱内强制显示 list/resource（即使原始页面是移动端骨架模式） */
+.diagram-lightbox .lb-embed-wrap .stage ul.list,
+.diagram-lightbox .lb-embed-wrap .stage .resource,
+.diagram-lightbox .lb-embed-wrap .stage .stage-kicker {
+  display: block !important;
+}
+/* 灯箱内恢复完整 stage 内容展示（沿用桌面完整结构，宽度铺满后图标标题文字天然对齐如网页版） */
+.diagram-lightbox .lb-embed-wrap .stage {
+  min-height: 500px !important;
+}
+/* 灯箱内缩小段间箭头，让每段 stage 更宽（约165px），标题单行不换行 → 7 张卡图标标题整齐对齐 */
+.diagram-lightbox .lb-embed-wrap .stage-wrap:not(:last-child)::after {
+  flex: 0 0 20px !important;
+  font-size: 16px !important;
+}
+/* 灯箱内 stage-no / h2 强制单行，避免标题换行导致图标位置上下错位 */
+.diagram-lightbox .lb-embed-wrap .stage-no {
+  white-space: nowrap !important;
+  overflow: hidden !important;
+}
+.diagram-lightbox .lb-embed-wrap .stage h2 {
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+.diagram-lightbox .lb-close {
+  position: absolute;
+  top: max(16px, env(safe-area-inset-top));
+  right: max(16px, env(safe-area-inset-right));
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(15, 31, 53, 0.85);
+  color: #fff;
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 44px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  -webkit-tap-highlight-color: transparent;
+  pointer-events: auto;
+}
+.diagram-lightbox .lb-hint {
+  position: absolute;
+  bottom: max(16px, env(safe-area-inset-bottom));
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: rgba(15, 31, 53, 0.55);
+  font-size: 13px;
+  pointer-events: none;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 6px 0;
+}
+@media (min-width: 621px) {
+  .diagram-lightbox .lb-close { width: 48px; height: 48px; line-height: 48px; font-size: 32px; }
+}
+
+/* === 多个卡片网格区域：手机端 (<=620px) 改为横向滑动浏览（scroll-snap）
+   电脑端 (>=621px) 不在此媒体查询内，原 grid 布局像素级不变 === */
+@media (max-width: 620px) {
+  .product-lines,
+  .claw-phones-row,
+  .is-cards,
+  .module-trio,
+  .course-imgs,
+  .camp-imgs,
+  .plans-grid,
+  .client-entries,
+  .ip-stack,
+  .empower-grid,
+  .jobs-grid,
+  .biz-house .business-grid {
+    display: flex !important;
+    flex-direction: row !important;
+    grid-template-columns: none !important;
+    gap: 14px !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    scroll-snap-type: x mandatory !important;
+    -webkit-overflow-scrolling: touch;
+    padding: 4px 12px 16px !important;
+    /* 关键：封顶父级宽度，否则 flex 内容会把容器撑到 1534px，overflow 形同虚设 */
+    max-width: 100% !important;
+    min-width: 0 !important;
+  }
+  /* jobs-grid 在 .contact-layout (grid) 里，grid item 默认 min-width:auto 会被内容撑爆，需手动允许收缩 */
+  .jobs-block { min-width: 0 !important; }
+  /* 每张卡固定宽度（snap 到 start，左右滑动浏览） */
+  .product-lines > *      { flex: 0 0 340px !important; scroll-snap-align: start !important; }
+  /* 让产品卡标题在 340px 宽下保持单行，避免三卡高度不齐 */
+  .product-lines .solution-pillar h3 { font-size: 24px !important; line-height: 1.35 !important; }
+  .claw-phones-row > *    { flex: 0 0 220px !important; scroll-snap-align: start !important; }
+  .is-cards > *           { flex: 0 0 260px !important; scroll-snap-align: start !important; }
+  .module-trio > *        { flex: 0 0 260px !important; scroll-snap-align: start !important; }
+  .course-imgs > *        { flex: 0 0 260px !important; scroll-snap-align: start !important; }
+  .camp-imgs > *          { flex: 0 0 260px !important; scroll-snap-align: start !important; }
+  .plans-grid > *         { flex: 0 0 240px !important; scroll-snap-align: start !important; }
+  .client-entries > *     { flex: 0 0 260px !important; scroll-snap-align: start !important; }
+  .ip-stack > *           { flex: 0 0 260px !important; scroll-snap-align: start !important; }
+  .empower-grid > *       { flex: 0 0 220px !important; scroll-snap-align: start !important; }
+  .jobs-grid > *          { flex: 0 0 240px !important; scroll-snap-align: start !important; }
+  .biz-house .business-grid > * { flex: 0 0 280px !important; scroll-snap-align: start !important; }
+  /* 隐藏横向滚动条（手机端原生隐藏，但保留可滚动） */
+  .product-lines::-webkit-scrollbar,
+  .claw-phones-row::-webkit-scrollbar,
+  .is-cards::-webkit-scrollbar,
+  .module-trio::-webkit-scrollbar,
+  .course-imgs::-webkit-scrollbar,
+  .camp-imgs::-webkit-scrollbar,
+  .plans-grid::-webkit-scrollbar,
+  .client-entries::-webkit-scrollbar,
+  .ip-stack::-webkit-scrollbar,
+  .empower-grid::-webkit-scrollbar,
+  .jobs-grid::-webkit-scrollbar,
+  .biz-house .business-grid::-webkit-scrollbar { display: none; }
+}
+
+/* === 手机端文案折叠（仅 ≤620，桌面不受影响） ===
+   逻辑：JS 在每段文案里按"指定句末"切割文本节点，
+   把 cut 之后的内容包成 .fold-tail-text，后续段落打 [data-fold-hide]，
+   收起态由本块统一隐藏；展开态全部恢复。 */
+@media (max-width: 620px) {
+  .text-collapsed .fold-tail-text { display: none; }
+  .text-collapsed [data-fold-hide] { display: none; }
+  .text-expanded .fold-tail-text { display: inline; }
+  .text-expanded [data-fold-hide] { display: revert; }
+  .text-toggle {
+    display: inline-block;
+    margin: 10px 0 6px;
+    padding: 6px 14px;
+    border-radius: 999px;
+    border: 1px solid var(--green-text, #28B894);
+    color: var(--green-text, #28B894);
+    background: transparent;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    user-select: none;
+  }
+  .text-toggle::before { content: "展开全文"; }
+  .text-expanded .text-toggle::before { content: "收起"; }
 }
