@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yaoyaoflyaway-cyber.github.io/sh-vitality-org-website/sitemap.xml
